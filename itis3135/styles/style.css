@@ -24,7 +24,7 @@ ul{
 }
 ul>li{
     margin: 10px;
-    font-weight: bold;
+    font-weight: normal;
 }
 ul ul > li{
     margin-left:20px;
