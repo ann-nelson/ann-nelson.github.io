@@ -5,7 +5,7 @@ body {
 header {
     background-color:#033E3E;
     color:#fff;
-    padding 1rem;
+    padding: 1rem;
     text-align:center;
 }
 nav ul{
@@ -23,7 +23,6 @@ nav ul li a{
     text-decoration: none;
     font-weight: bold;
 }
-}
 nav ul li a:hover{
     color:#056e6e;
     text-decoration: underline;
@@ -34,7 +33,7 @@ main{
     text-align: center;
 }
 main h2 {
-    font: 'Georgia', serif;
+    font-family: Georgia, serif;
     color: #033E3E;
     font-size: 1.8rem;
 }
