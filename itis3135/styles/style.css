@@ -7,6 +7,12 @@ h1, h2{
     text-align:center;
     color:#033E3E;
 }
+header{
+    color:#fff;
+    background-color:#033E3E;
+    padding: 1rem;
+    text-align:center;
+}
 figure.center{
     display:flex;
     flex-direction:column;
