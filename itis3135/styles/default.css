@@ -1,15 +1,16 @@
+<style>
 body {
     background-color: ivory;
     color:#033E3E;
-  }
-  
-  h1 {
+}
+
+h1, h2 {
     color: #033E3E;
-    text-align: center;
-  }
+}
   
-  p {
+p {
     font-family: verdana,sans-serif;
     font-size: 20px;
     color: #033E3E;
-  }
+}
+</style>
