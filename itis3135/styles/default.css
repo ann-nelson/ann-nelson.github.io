@@ -59,3 +59,8 @@ footer a:hover{
     text-decoration: underline;
     color:#056e6e;
 }
+p.sign{
+    font-style: italic;
+    text-align: center;
+    margin-top: 2.5px;
+}
