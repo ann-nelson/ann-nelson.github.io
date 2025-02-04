@@ -1,12 +1,39 @@
 body {
     background-color: #fff;
     color:#033E3E;
+    font-family: 'Georgia', sans-serif;
 }
-header {
-    background-color:#033E3E;
-    color:#fff;
-    padding 1rem;
+h1 {
     text-align:center;
+    color:#033E3E;
+}
+figure.center{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    margin: 20px auto;
+}
+figcaption{
+    font-style:italic;
+    text-align: center;
+    margin-top: 5px;
+}
+ul{
+    list-style:none;
+    padding:0;
+}
+ul>li{
+    margin: 10px;
+    font-weight: bold;
+}
+ul ul > li{
+    margin-left:20px;
+    font-weight:normal;
+}
+img{
+    max-width:100%;
+    height:auto;
+    display: block;
 }
 nav ul{
     display:flex;
@@ -23,40 +50,7 @@ nav ul li a{
     text-decoration: none;
     font-weight: bold;
 }
-}
 nav ul li a:hover{
     color:#056e6e;
     text-decoration: underline;
-}
-
-main{
-    padding:2rem;
-    text-align: center;
-}
-main h2 {
-    font: 'Georgia', serif;
-    color: #033E3E;
-    font-size: 1.8rem;
-}
-
-footer{
-    background-color:#fff;
-    color:#033E3E;
-    padding:1rem;
-    text-align: center;
-}
-footer ul{
-    list-style:none;
-    padding: 0;
-}
-footer ul li{
-    margin:0.5rem 0;
-}
-footer a{
-    color:#033E3E;
-    text-decoration: none;
-}
-footer a:hover{
-    text-decoration: underline;
-    color:#056e6e;
 }
