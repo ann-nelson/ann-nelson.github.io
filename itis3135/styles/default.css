@@ -8,6 +8,10 @@ header {
     padding: 1rem;
     text-align:center;
 }
+h1{
+    color:#fff;
+    text-align:center;
+}
 nav ul{
     display:flex;
     background-color:#056e6e;
