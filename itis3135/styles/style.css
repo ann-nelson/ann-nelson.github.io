@@ -60,3 +60,11 @@ nav ul li a:hover{
     color:#2eb7b7;
     text-decoration: underline;
 }
+a {
+    color: #033E3E;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+    color:#288585;
+}
