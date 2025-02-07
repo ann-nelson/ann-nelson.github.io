@@ -60,11 +60,25 @@ nav ul li a:hover{
     color:#2eb7b7;
     text-decoration: underline;
 }
-a {
-    color: #033E3E;
+footer{
+    background-color:#fff;
+    color:#033E3E;
+    padding:1rem;
+    text-align: center;
+    font-weight: bold;
+}
+footer ul{
+    list-style:none;
+    padding: 0;
+}
+footer ul li{
+    margin:0.5rem 0;
+}
+footer a{
+    color:#033E3E;
     text-decoration: none;
 }
-a:hover{
+footer a:hover{
     text-decoration: underline;
-    color:#288585;
+    color:#056e6e;
 }
