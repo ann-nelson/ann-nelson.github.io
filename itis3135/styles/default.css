@@ -12,12 +12,20 @@ h1{
     color:#fff;
     text-align:center;
 }
+h2{margin-top:-5px;
+margin-bottom: -2px;}
 nav ul{
     display:flex;
     background-color:#056e6e;
     justify-content: center;
     list-style: none;
-    padding:5px;
+    padding: 5px;
+}
+.intro {
+    margin-bottom: -35px;
+}
+.links{
+    margin-bottom: 35px;
 }
 nav ul li{
     margin: 0 1rem;
