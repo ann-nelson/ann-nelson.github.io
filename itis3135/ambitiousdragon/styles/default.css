@@ -1,0 +1,66 @@
+header{
+    background-color: #02563d;
+    text-align: center;
+    padding-top:1em;
+    color: #ffffff;
+    font-weight: 900px;
+    font-size: large;
+}
+nav ul li a{
+text-decoration: none;
+font-weight: bolder;
+color: #f6ae2d;;
+}
+nav ul li a:hover{
+    text-decoration: underline; 
+    color: #2290a9;
+
+}
+nav ul li{
+    margin: 0 1rem;
+}
+nav ul{
+    display:flex;
+    background-color:#083729;
+    justify-content: center;
+    list-style: none;
+    padding:5px;
+}
+body{
+    padding-bottom: 1em;
+    background-color: #FFFFFF;
+    font-family:Georgia, Times, serif;
+}
+.about{
+    padding-bottom: 4em;
+    margin: auto;
+    margin-left: 1em;
+    margin-right:1em;
+}
+footer{
+    text-align: center;
+    padding-top: 0.5em;
+    background-color: #02563d;
+    color:#FFFFFF
+}
+h2{
+    text-align: center;
+    color:#083729;
+    font-weight: 700px;
+}
+a {
+    color:#FFFFFF;
+    text-decoration: none;
+}
+a:hover{
+    color:#f6ae2d;
+    text-decoration: underline;
+}
+.slogan{
+    color:#083729;
+    font-size: large;
+    background-color: #fff;
+}
+h1{
+    margin-bottom: 0;
+}
