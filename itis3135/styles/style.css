@@ -66,10 +66,14 @@ footer{
     padding:1rem;
     text-align: center;
     font-weight: bold;
+    justify-content: center;
 }
 footer ul{
     list-style:none;
     padding: 0;
+    display:flex;
+    flex-wrap: wrap;
+    gap: 3px;
 }
 footer ul li{
     margin:0.5rem 0;
