@@ -1,17 +1,11 @@
 body {
-    background-color: #fff;
+    background-color: ivory;
     color:#033E3E;
     font-family: Georgia, serif;
 }
 h2{
     text-align:center;
     color:#033E3E;
-}
-h1{
-    color:#fff;
-    background-color:#033E3E;
-    padding: 1rem;
-    text-align:center;
 }
 figure.center{
     display:flex;
@@ -62,8 +56,8 @@ nav ul li a:hover{
     text-decoration: underline;
 }
 footer{
-    background-color:#fff;
-    color:#033E3E;
+    background-color:#62b0b0;
+    color: ivory;
     padding:1rem;
     text-align: center;
     font-weight: bold;
@@ -75,15 +69,33 @@ footer ul{
     display:flex;
     flex-wrap: wrap;
     gap: 3px;
+    justify-content: center;
+    text-align: center;
 }
 footer ul li{
     margin:0.5rem 0;
 }
 footer a{
-    color:#033E3E;
+    color:ivory;
     text-decoration: none;
+    text-align: center;
 }
 footer a:hover{
     text-decoration: underline;
     color:#056e6e;
+}
+.headshot{
+    height:300px;
+    width:300px;
+    border-radius: 5%;
+}
+header {
+    background-color:#033E3E;
+    color:ivory;
+    padding: 1rem;
+    text-align:center;
+}
+.valid{
+    justify-content: center;
+    display:flex;
 }

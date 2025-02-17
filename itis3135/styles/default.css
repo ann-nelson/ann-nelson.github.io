@@ -12,8 +12,10 @@ h1{
     color:ivory;
     text-align:center;
 }
-h2{margin-top:-5px;
-margin-bottom: -2px;}
+h2{
+    margin-top:-5px;
+    margin-bottom: -2px;
+}
 nav ul{
     display:flex;
     background-color:#056e6e;
@@ -77,6 +79,11 @@ footer a:hover{
 }
 p.sign{
     font-style: italic;
-    text-align: center;
     margin-top: 2.5px;
+}
+p{
+text-align: left;
+}
+.copy{
+    text-align: center;
 }
