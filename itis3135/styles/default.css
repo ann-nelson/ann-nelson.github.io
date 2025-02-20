@@ -53,7 +53,6 @@ nav ul li a{
     font-weight: bold;
 }
 nav ul li a:hover{
-    color:#2eb7b7;
     text-decoration: underline;
 }
 .content a{
@@ -69,13 +68,13 @@ main{
     padding:2rem;
     text-align: center;
 }
-main h2 {
+h2 {
     font-family: Georgia, serif;
     color: #033E3E;
     font-size: 1.8rem;
 }
 footer{
-    background-color:#62b0b0;
+    background-color:#033E3E;
     color: ivory;
     padding:1rem;
     text-align: center;
@@ -102,7 +101,7 @@ footer a:hover{
     color:#056e6e;
     font-weight: bold;
 }
-p.sign{
+.sign{
     font-style: italic;
     margin-top: 2.5px;
 }

@@ -61,11 +61,10 @@ nav ul li a{
     font-weight: bold;
 }
 nav ul li a:hover{
-    color:#2eb7b7;
     text-decoration: underline;
 }
 footer{
-    background-color:#62b0b0;
+    background-color:#033E3E;
     color: ivory;
     padding:1rem;
     text-align: center;
