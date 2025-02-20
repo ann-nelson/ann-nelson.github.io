@@ -16,7 +16,7 @@ h2{
     text-align:center;
     color:#033E3E;
 }
-figure.center{
+.center{
     display:flex;
     flex-direction:column;
     align-items: center;
@@ -94,7 +94,7 @@ footer a:hover{
     font-weight: bold;
 }
 .headshot{
-    height:300px;
+    height:auto;
     width:300px;
     border-radius: 5%;
 }

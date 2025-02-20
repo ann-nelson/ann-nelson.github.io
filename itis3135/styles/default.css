@@ -24,6 +24,9 @@ h1{
 h2{
     margin-top:-5px;
     margin-bottom: -2px;
+    font-family: Georgia, serif;
+    color: #033E3E;
+    font-size: 1.8rem;
 }
 nav ul{
     display:flex;
@@ -67,11 +70,6 @@ nav ul li a:hover{
 main{
     padding:2rem;
     text-align: center;
-}
-h2 {
-    font-family: Georgia, serif;
-    color: #033E3E;
-    font-size: 1.8rem;
 }
 footer{
     background-color:#033E3E;
