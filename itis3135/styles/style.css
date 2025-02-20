@@ -41,8 +41,6 @@ ul ul > li{
     font-weight:normal;
 }
 img{
-    max-width:100%;
-    height:auto;
     display: block;
 }
 nav ul{
@@ -94,8 +92,6 @@ footer a:hover{
     font-weight: bold;
 }
 .headshot{
-    height:auto;
-    width:300px;
     border-radius: 5%;
 }
 header {
