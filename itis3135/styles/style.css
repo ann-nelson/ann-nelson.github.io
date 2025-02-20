@@ -83,6 +83,7 @@ footer a{
 footer a:hover{
     text-decoration: underline;
     color:#056e6e;
+    font-weight: bold;
 }
 .headshot{
     height:300px;
