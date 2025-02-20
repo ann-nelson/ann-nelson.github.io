@@ -2,7 +2,7 @@ header{
     background-color: #02563d;
     text-align: center;
     padding-top:1em;
-    color: #ffffff;
+    color: ivory;
     font-weight: 900px;
     font-size: large;
 }
@@ -28,7 +28,7 @@ nav ul{
 }
 body{
     padding-bottom: 1em;
-    background-color: #FFFFFF;
+    background-color: ivory;
     font-family:Georgia, Times, serif;
     
 }
@@ -49,7 +49,7 @@ footer{
     text-align: center;
     padding-top: 0.5em;
     background-color: #02563d;
-    color:#FFFFFF;
+    color:ivory;
 }
 h2{
     text-align: center;
@@ -57,7 +57,7 @@ h2{
     font-weight: 700px;
 }
 a {
-    color:#FFFFFF;
+    color:ivory;
     text-decoration: none;
 }
 a:hover{
@@ -67,7 +67,7 @@ a:hover{
 .slogan{
     color:#083729;
     font-size: large;
-    background-color: #fff;
+    background-color: ivory;
 }
 h1{
     margin-bottom: 0;
