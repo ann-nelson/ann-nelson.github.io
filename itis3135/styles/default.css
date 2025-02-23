@@ -96,7 +96,6 @@ footer a{
 }
 footer a:hover{
     text-decoration: underline;
-    color:#056e6e;
     font-weight: bold;
 }
 .sign{
@@ -106,6 +105,12 @@ footer a:hover{
 p{
     text-align: left;
 }
-.copy{
+.copy, .certified{
     text-align: center;
+}
+.copy{
+    font-size: large;
+}
+.certified{
+    font-size: medium;
 }

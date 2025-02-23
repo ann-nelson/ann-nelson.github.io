@@ -88,7 +88,6 @@ footer a{
 }
 footer a:hover{
     text-decoration: underline;
-    color:#056e6e;
     font-weight: bold;
 }
 .headshot{
@@ -103,4 +102,7 @@ header {
 .valid{
     justify-content: center;
     display:flex;
+}
+.certified{
+    font-size:small;
 }
