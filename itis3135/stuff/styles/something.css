@@ -1,0 +1,14 @@
+.copy,.certified{
+    text-align: right;
+    text-decoration: none;
+    color:black;
+}
+h5,p{
+    margin:0;
+    padding:0;
+}
+.hashtag{
+    font-size: small;
+    color: blue;
+    text-decoration: underline;
+}
