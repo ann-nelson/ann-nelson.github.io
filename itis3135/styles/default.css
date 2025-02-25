@@ -117,11 +117,8 @@ p{
 .crap{
     text-align: left;
 }
-.evaluate, h3, p{
+.evaluate{
     text-align: left; 
-}
-h3{
-    padding-left: 30px;
 }
 .good a, .bad a{
     text-decoration: none;
@@ -130,7 +127,8 @@ h3{
 .good a:hover, .bad a:hover{
     text-decoration: underline;
 }
-.good p, .bad p{
+.good p, .bad p, h3{
+    text-align: left;
     padding-left:30px;
 }
 .good ul, .bad ul{
