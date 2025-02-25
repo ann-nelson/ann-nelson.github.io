@@ -10,24 +10,49 @@
             color:black;
         }
         h1{
-            font-family: Comic;
+            color: lightblue;
         }
         a {
             text-decoration: none;
             color:black;
+            margin: 20px;
         }
-
+        .copy a{ 
+            font-family: Times;
+            text-decoration: underline;
+            color: blue;
+        }
+        .list{
+            color:white;
+            text-decoration: underline;
+            text-decoration-color: black;
+        }
+        body{
+            margin: 0;
+            padding:0;
+        }
     </style>
 </head>
 <header>
-    <div data-include="components/header.html"></div>
+    <div data-include="components/header.htm"></div>
 </header>
 <body>
-<img src="/itis3135/stuff/images/jokeaboutwebdesign" width="400" height="400"/>
-<h5>web design funny that talks about working reality</h5>
-<p class="hashtag">#fact@WebLife<p>
-<footer>
-    <div data-include="/components/footer.html"></div>
+    <a href="https://www.designhill.com/design-blog/funniest-design-jokes/">
+        <img src="/itis3135/stuff/images/jokeaboutwebdesign" width="400" height="400"/>
+    </a>
+<h5 style="color: lightblue;">web design funny that talks about working reality</h5>
+<p class="hashtag" >#fact@WebLife<p>
+    <br>
+    <br>
+<p class="center" style="border-bottom: purple dashed 4pt;border-top: 2pt solid red;border-left: 2.3pt yellowgreen dotted;border-right: 6pt groove salmon;">Fuhn facts about Web dezign!</p>
+<ul>
+    <li>avg attention spann on wetcite is 8 seconds</li>
+    <li><p class="list">Over too-thirds of web traffic occurs on mobile devicez.</p></li>
+    <li>1st webcite created wuz in 1991</li>
+</ul>
+<h3>What to Know Moore?!?!</h3>
+    <footer>
+    <div data-include="components/footer.htm"></div>
 </footer>
 <script src="scripts/include.js"></script>
 </body>
