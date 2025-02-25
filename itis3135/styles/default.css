@@ -114,3 +114,29 @@ p{
 .certified{
     font-size: medium;
 }
+.crap{
+    text-align: left;
+}
+.evaluate, h3, p{
+    text-align: left; 
+}
+h3{
+    padding-left: 30px;
+}
+.good a, .bad a{
+    text-decoration: none;
+    color: #033E3E;
+}
+.good a:hover, .bad a:hover{
+    text-decoration: underline;
+}
+.good p, .bad p{
+    padding-left:30px;
+}
+.good ul, .bad ul{
+    padding-left: 45px;
+}
+.space{
+    border:dotted 2pt #056e6e
+}
+
