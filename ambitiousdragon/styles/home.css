@@ -1,74 +1,107 @@
-header{
-    background-color: #02563d;
-    text-align: center;
-    padding-top:1em;
-    color: ivory;
-    font-weight: 900px;
-    font-size: large;
-}
-nav ul li a{
-    text-decoration: none;
-    font-weight: bolder;
-    color: #f6ae2d;;
-}
-nav ul li a:hover{
-    text-decoration: underline; 
-    color: #2290a9;
-
-}
-nav ul li{
-    margin: 0 1rem;
-}
-nav ul{
-    display:flex;
-    background-color:#083729;
-    justify-content: center;
-    list-style: none;
-    padding:5px;
-}
-body{
-    padding-bottom: 1em;
-    background-color: ivory;
-    font-family:Georgia, Times, serif;
-    
-}
-body, html{
-    height:100%;
-    margin:0;
-    display:flex;
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
     flex-direction: column;
+    background-color: ivory;
+    font-family: Georgia, Times, serif;
+    padding-bottom: 1em;
 }
-main{
+
+main {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
     flex: 1;
 }
-.home{
-    text-align:center;
-    padding-bottom: 2em;
+
+header {
+    background-color: #02563d;
+    text-align: center;
+    padding-top: 1em;
+    color: ivory;
+    font-weight: 900;
+    font-size: large;
 }
-footer{
+
+nav ul {
+    display: flex;
+    background-color: #083729;
+    justify-content: center;
+    list-style: none;
+    padding: 5px;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #f6ae2d;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #2290a9;
+}
+
+h1 {
+    margin-bottom: 0;
+}
+
+h2 {
+    text-align: center;
+    color: #083729;
+    font-weight: 700;
+}
+
+.slogan {
+    color: #083729;
+    font-size: large;
+    background-color: ivory;
+}
+
+a {
+    color: ivory;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f6ae2d;
+    text-decoration: underline;
+}
+
+footer {
     text-align: center;
     padding-top: 0.5em;
     background-color: #02563d;
-    color:ivory;
+    color: ivory;
 }
-h2{
+
+.home {
     text-align: center;
-    color:#083729;
-    font-weight: 700px;
+    padding-bottom: 2em;
 }
-a {
-    color:ivory;
-    text-decoration: none;
+
+@media (max-width: 1024px) {
+    main {
+        max-width: 95%;
+    }
+    nav ul {
+        flex-direction: row;
+        padding: 10px;
+    }
 }
-a:hover{
-    color:#f6ae2d;
-    text-decoration: underline;
-}
-.slogan{
-    color:#083729;
-    font-size: large;
-    background-color: ivory;
-}
-h1{
-    margin-bottom: 0;
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+    nav ul li {
+        margin: 5px 0;
+    }
 }

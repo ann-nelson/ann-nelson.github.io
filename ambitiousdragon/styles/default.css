@@ -1,75 +1,129 @@
-header{
-    background-color: #02563d;
-    text-align: center;
-    padding-top:1em;
-    color: ivory;
-    font-weight: 900px;
-    font-size: large;
-}
-body, html{
-    height:100%;
-    margin:0;
-    display:flex;
+
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
     flex-direction: column;
+    font-family: Georgia, Times, serif;
+    background-color: ivory;
+    padding-bottom: 1em;
 }
-main{
+
+main {
+    max-width: 1200px; 
+    width: 90%; 
+    margin: 0 auto; 
     flex: 1;
 }
-nav ul li a{
-    text-decoration: none;
-    font-weight: bolder;
-    color: #f6ae2d;;
-}
-nav ul li a:hover{
-    text-decoration: underline; 
-    color: #2290a9;
 
+header {
+    background-color: #02563d;
+    text-align: center;
+    padding-top: 1em;
+    color: ivory;
+    font-weight: 900;
+    font-size: large;
 }
-nav ul li{
-    margin: 0 1rem;
-}
-nav ul{
-    display:flex;
-    background-color:#083729;
+
+nav ul {
+    display: flex;
+    background-color: #083729;
     justify-content: center;
     list-style: none;
-    padding:5px;
+    padding: 5px;
 }
-body{
-    padding-bottom: 1em;
-    background-color: ivory;
-    font-family:Georgia, Times, serif;
+
+nav ul li {
+    margin: 0 1rem;
 }
-.about{
-    padding-bottom: 4em;
-    margin: auto;
-    margin-left: 1em;
-    margin-right:1em;
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: #f6ae2d;
 }
-footer{
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #2290a9;
+}
+
+
+h1 {
+    margin-bottom: 0;
+}
+
+h2 {
     text-align: center;
-    padding-top: 0.5em;
-    background-color: #02563d;
-    color:ivory;
+    color: #083729;
+    font-weight: 700;
 }
-h2{
-    text-align: center;
-    color:#083729;
-    font-weight: 700px;
-}
+
 a {
     color: ivory;
     text-decoration: none;
 }
-a:hover{
-    color:#f6ae2d;
+
+a:hover {
+    color: #f6ae2d;
     text-decoration: underline;
 }
-.slogan{
-    color:#083729;
+
+.about {
+    padding-bottom: 4em;
+    margin: auto 1em;
+}
+
+
+.slogan {
+    color: #083729;
     font-size: large;
     background-color: ivory;
 }
-h1{
-    margin-bottom: 0;
+
+
+footer {
+    text-align: center;
+    padding-top: 0.5em;
+    background-color: #02563d;
+    color: ivory;
 }
+
+
+@media (max-width: 768px) { 
+    main {
+        width: 95%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 0.5em 0;
+    }
+}
+
+@media (max-width: 480px) { 
+    header {
+        font-size: medium;
+        padding-top: 0.5em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    main {
+        width: 100%;
+        padding: 0 1em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+}
+
