@@ -53,6 +53,36 @@
         div{
             padding: 1px;
         }
+        h3{
+            padding-left: 5px;
+        }
+        h4{
+            text-align: left;
+            padding:0;
+            margin-left:-25px;
+            margin-bottom:5px;
+        }
+        #materials li{
+            list-style:square;
+        }
+        #steps li{
+            list-style:number;
+        }
+        #kit{
+            margin-left: 10px;
+        }
+        #or{
+            padding:5px;
+            border: dotted black 3px;
+            background-color: #d7d234;
+
+        }
+        #pics{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 columns for the first row */
+            grid-template-rows: auto auto; /* 2 rows */
+            gap: 10px; 
+        }
         
     </style>
 </head>
@@ -76,12 +106,17 @@
     <main>
         <section id="home">
             <h2>Home</h2>
-            <p>Explain what the hobby is about </p>
+            <p>Embroidery is a way of transforming fabric into a piece of art with just a needle and some thread. </p>
+            <p>It involves stitching designs onto cloth, often using colorful threads, beads, or sequins. It has been used to personalize clothes, create art, or 
+                add decoration to things like pillows, tablecloths, and so many things.</p>
         </section>
         <div></div>
         <section id="about">
             <h2>About</h2>
-            <p>History of Hobby</p>
+            <p>I am not exactly sure how embroidery first came into the world, other than as a way to create beautiful designs on clothing, tapestries, and countless other items. </p>
+            <p>But for my family, embroidery became a tradition in 1981 when my eldest sibling was born. My parents embroidered Christmas stockings for my sibling and themselves, 
+                starting a tradition of making a stocking for every new family member as a way to welcome them. </p>
+            <p>Everyone played a part in the process, from separating the thread to stitching the designs and assembling the final pieces.</p>
         </section>
         <div></div>
         <section id="best-times">
@@ -92,32 +127,67 @@
         <div></div>
         <section id="locations">
             <h2>Locations</h2>
-            <p>locations that promote or particpate in hobby</p>
+            <p>The best thing about this hobby is its flexibility—you can do it anywhere! 
+                I have done it in cars, on trains, at home, and even during downtime at work 
+                (no judgment, it is definitely more productive than mindlessly scrolling through Instagram or rewatching the 
+                same show for the tenth time).</p>
+            <p>Another great thing about this hobby is that supplies are easy to find—you can get them at specialty stores, 
+                craft shops, or even good old Walmart.</p>
         </section>
         <div></div>
         <section id="how-to">
             <h2>How To</h2>
             <h3>Basic DIY Guide</h3>
-            <ul id="materials">Materials
+            <ul id="materials"><h4>Materials</h4>
                 <li>Fabric (cotton or linen)</li>
                 <li>Embroidery hoop (holds fabric taut)
                 <li>Embroidery Thread</li>
-                <li>Needle (thicker thread = bigger eye)</li>
+                <li>Needle</li>
                 <li>Scissors</li>
-                <li>Transfer Pen</li>
+                <li>Transfer Pen</li> 
             </ul>
-            <ul id="steps">Steps
+            <ul id="steps"><h4>Steps</h4>
+                <li></li>
                 <li></li>
             </ul>
+            <h2 id="or">OR</h2>
+            <h3>Buy a Kit</h3>
+            <p>I do kits since it provides everything that I will need to complete the craft. 
+                So don't have to decide on the thread color, the stich you are going to use, and so on.</p>
+            <h4 id="kit">Look at what comes in a kit</h4>
+            <div id="pics">
+                <figure>
+                    <img src="images/loop.png" alt="A loop which will hold the fabric">
+                    <figcaption>A loop designed to secure and support fabric.</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/fabric.png" alt="Fabric with a floral design embedded inside a loop">
+                    <figcaption>A floral-patterned fabric enclosed within a loop</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/scissorNeedle.png" alt="Scissors and Needles">
+                    <figcaption>Scissors and Needles provided by the kit</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/thread.png" alt="Prepicked and counted thread">
+                    <figcaption>Pre-picked and sorted thread, provided by the kit.</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/instruction.png" alt="Instruction about what thread and stich to use">
+                    <figcaption>Instructions detailing the thread color and stitch method used for this craft.</figcaption>
+                </figure>
+            </div>
+                
         </section>
         <div></div>
         <section id ="why">
             <h2>Why This</h2>
             <p>During the winter season, my parents would get the whole family involved in embroidery. 
-                We made Christmas stockings for family members, card holders, and so many other projects. 
-                It became a cherished unplugged family activity where we could create something together. 
-                My parents also used it as a way to relax before bed. I’ve continued the tradition because it is a calm, 
-                creative, and peaceful way to spend my free time. We currently have a stocking in progress for a new family addition, 
+                I do this hobby because it is a calm, creative, and peaceful way to spend my free time. We currently have a stocking in progress for a new family addition, 
                 Ringo Star, my mom is cat. 
                 For me, embroidery is a way to unwind, disconnect from the world, and give my mind a break.</p>
         </section>
