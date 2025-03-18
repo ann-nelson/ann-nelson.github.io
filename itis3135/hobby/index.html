@@ -45,6 +45,7 @@
             
             border-radius: 15px;
             background-color: #B8B42D;
+            display: none;
         }
         p{ 
             padding-left: 8px;
@@ -57,7 +58,7 @@
         h3{
             padding-left: 5px;
         }
-        h4{
+        .materials, .steps{
             text-align: left;
             padding:0;
             margin-left:-25px;
@@ -117,9 +118,6 @@
             width: 100%;
         }
     }
-    .section {
-        display: none;
-        }
 
     .section.active {
         display: block;
@@ -217,7 +215,7 @@
         <section id="how-to" class="section">
             <h2>How To</h2>
             <h3>Basic DIY Guide</h3>
-            <ul id="materials"><h4>Materials</h4>
+            <ul id="materials"><strong class="materials">Materials</strong>
                 <li>Fabric (cotton or linen)</li>
                 <li>Embroidery hoop (holds fabric taut)
                 <li>Embroidery Thread</li>
@@ -225,7 +223,7 @@
                 <li>Scissors</li>
                 <li>Transfer Pen</li> 
             </ul>
-            <ul id="steps"><h4>Steps</h4>
+            <ul id="steps"><strong class="steps">Steps</strong>
                 <li><strong>Prepare the Fabric: </strong>Put the fabric into the hoop. Then draw the design onto the fabric.</li>
                 <li><strong>Prepare the Thread:</strong>Separate the thread to have 2 or 3 strands. Then insert the thread throught the eye of the needle. Lastly, know the end of the thread.</li>
                 <li><strong>Start Stitching:</strong> Stitch where the drawing outline. Use a running stitch which you push the needle through the fabric, pull it out, then repeat with small spaces in between.</li>
@@ -293,7 +291,7 @@
         function showSection(sectionId) {
             const sections = document.querySelectorAll('.section');
     
-            sections.forEach(section => {
+            sections.forEach((section) => {
                 section.classList.remove('active'); 
             });
     
