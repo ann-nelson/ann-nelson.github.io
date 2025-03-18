@@ -9,25 +9,26 @@
             color:#2E4052;
             background-color: #E9F1F7;
             margin: 0 auto;
+            font-family:'Gill Sans MT', sans-serif;
         }
         nav{
             border: #2E4052 solid 5px;
-        }
-        nav ul{
-            display: flex;
-            justify-content:center;
-            list-style: none;
-            gap: 30px;
-            
-        }
-        nav ul li{
-            list-style: none;
-            text-align: left;
+            border-radius: 10px;
+            font-size:x-large;
+            background-color: #d4b7ba;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-content: center;
+            padding: 10px;
         }
         a{
             text-decoration: none;
             font-weight: bolder;
             color:#2E4052;
+            padding: 5px;
+        }
+        a:hover{
+            text-decoration: underline;
         }
         #title{
             text-align: center;
@@ -48,7 +49,7 @@
         p{ 
             padding-left: 8px;
             padding-bottom: 10px;
-
+            margin:10px;
         }
         div{
             padding: 1px;
@@ -77,65 +78,143 @@
             background-color: #d7d234;
 
         }
-        #pics{
-            display: grid;
-            grid-template-columns: repeat(3, 1fr); /* 3 columns for the first row */
-            grid-template-rows: auto auto; /* 2 rows */
+        #homepics, #aboutpics, #best-timespics,#locationpics, #kitpics, #whypics{
+            display: flexbox;
             gap: 10px; 
+            text-align: center;
         }
+        footer{
+            text-align: center;
+        }
+        @media (max-width: 768px) { 
+            main {
+                width: 95%;
+            }
+
+            nav {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav a {
+                margin: 0.5em 0;
+                }
+            }
+
+    @media (max-width: 480px) { 
+        header {
+            font-size: medium;
+            padding-top: 0.5em;
+        }  
+
+        nav {
+            flex-direction: column;
+            text-align: center;
+            padding: 10px;
+        }
+
+        main {
+            width: 100%;
+        }
+    }
+    .section {
+        display: none;
+        }
+
+    .section.active {
+        display: block;
+    }
         
     </style>
 </head>
 <body>
     <header>
-        <h1 id="title">Hobby</h1>
+        <h1 id="title">HOBBY</h1>
         <nav>
-            <ul id="page1">
-                <li> <a href=#home>Home</a></li> 
-                <li> <a href=#about>About</a></li>
-                <li><a href=#best-times>Best Times </a></li>
-                <li><a href=#locations>Locations </a></li>
-            </ul>
-            <ul id="page2">
-                <li><a href=#how-to>How To</a></li>
-                <li><a href=#why>Why This</a></li> 
-                <li><a href=#ai>AI Prompts</a></li>
-            </ul>
+                <a onclick="showSection('home')">Home</a>
+                <a onclick="showSection('about')">About</a>
+                <a onclick="showSection('best-times')">Best Times </a>
+                <a onclick="showSection('locations')">Locations </a>
+                <a onclick="showSection('how-to')">How To</a>
+                <a onclick="showSection('why')">Why This</a>
+                <a onclick="showSection('ai')">AI Prompts</a>
         </nav>
     </header>
     <main>
-        <section id="home">
+        <section id="home" class="section active">
             <h2>Home</h2>
             <p>Embroidery is a way of transforming fabric into a piece of art with just a needle and some thread. </p>
             <p>It involves stitching designs onto cloth, often using colorful threads, beads, or sequins. It has been used to personalize clothes, create art, or 
                 add decoration to things like pillows, tablecloths, and so many things.</p>
-        </section>
+                <div id="homepics">
+                    <figure>
+                        <img src="images/jean.png" alt="pair of jeans with an embroidered seam">
+                        <figcaption>My sister's jeans are embroidered down the seam</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/strap.png" alt="embroidered purse strap">
+                        <figcaption>My sister's purse strap is embroidered</figcaption>
+                    </figure>
+                </div>
+            </section>
+
         <div></div>
-        <section id="about">
+        <section id="about" class="section">
             <h2>About</h2>
             <p>I am not exactly sure how embroidery first came into the world, other than as a way to create beautiful designs on clothing, tapestries, and countless other items. </p>
-            <p>But for my family, embroidery became a tradition in 1981 when my eldest sibling was born. My parents embroidered Christmas stockings for my sibling and themselves, 
+            <p>But for my family, embroidery became a tradition in 1980 when my eldest sibling was born. My parents embroidered Christmas stockings for themselves, 
                 starting a tradition of making a stocking for every new family member as a way to welcome them. </p>
             <p>Everyone played a part in the process, from separating the thread to stitching the designs and assembling the final pieces.</p>
+                <div id="aboutpics">
+                    <figure>
+                        <img src="images/dad.png" alt="embroidered christmas stocking">
+                        <figcaption>This is my dad's christmas stocking</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/mom.png" alt="embroidered christmas stocking">
+                        <figcaption>This is my mom's christmas stocking</figcaption>
+                    </figure>
+                </div>
         </section>
         <div></div>
-        <section id="best-times">
+        <section id="best-times" class="section">
             <h2>Best Times</h2>
             <p>Embroidery is a fantastic activity to enjoy year-round. It's a great activity to do when stuck indoors because of bad weather or whatever reason. 
                 It is a cozy and quiet hobby to relax with, as it lets you concentrate on making beautiful designs while staying comfortable inside.</p>
-        </section>
+                <div id="best-timespics">
+                    <figure>
+                        <img src="images/sisters.png" alt="embroidered christmas stocking">
+                        <figcaption>This is my youngest sister's christmas stocking.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/card.png" alt="embroidered christmas card holder">
+                        <figcaption>This is what we use to hold past family christmas cards.</figcaption>
+                    </figure>
+                </div>
+            </section>
         <div></div>
-        <section id="locations">
+        <section id="locations" class="section">
             <h2>Locations</h2>
             <p>The best thing about this hobby is its flexibility—you can do it anywhere! 
                 I have done it in cars, on trains, at home, and even during downtime at work 
                 (no judgment, it is definitely more productive than mindlessly scrolling through Instagram or rewatching the 
                 same show for the tenth time).</p>
+                
             <p>Another great thing about this hobby is that supplies are easy to find—you can get them at specialty stores, 
                 craft shops, or even good old Walmart.</p>
+            <div id="locationpics">
+                <figure id="pics6">
+                <img src="images/one.png" alt="embroidered fabric with floral design">
+                <figcaption>I created this while traveling by train to and from UNCC on my way home.</figcaption>
+            </figure>
+            <figure id="pics7">
+                <img src="images/three.png" alt="embroidered fabric with floral design">
+                <figcaption>I created this while traveling to and from Orlando, FL for Thanksgiving 2023</figcaption>
+            </figure>
+            </div>
         </section>
         <div></div>
-        <section id="how-to">
+        <section id="how-to" class="section">
             <h2>How To</h2>
             <h3>Basic DIY Guide</h3>
             <ul id="materials"><h4>Materials</h4>
@@ -147,54 +226,80 @@
                 <li>Transfer Pen</li> 
             </ul>
             <ul id="steps"><h4>Steps</h4>
-                <li></li>
-                <li></li>
+                <li><strong>Prepare the Fabric: </strong>Put the fabric into the hoop. Then draw the design onto the fabric.</li>
+                <li><strong>Prepare the Thread:</strong>Separate the thread to have 2 or 3 strands. Then insert the thread throught the eye of the needle. Lastly, know the end of the thread.</li>
+                <li><strong>Start Stitching:</strong> Stitch where the drawing outline. Use a running stitch which you push the needle through the fabric, pull it out, then repeat with small spaces in between.</li>
+                <li><strong>Finish Up:</strong>Tie off the thread at the back and trim any excess.</li>
+                <li><strong>Finishing Touches:</strong>Iron the fabric for a smooth finish or put it into a frame.</li>
             </ul>
             <h2 id="or">OR</h2>
             <h3>Buy a Kit</h3>
             <p>I do kits since it provides everything that I will need to complete the craft. 
                 So don't have to decide on the thread color, the stich you are going to use, and so on.</p>
             <h4 id="kit">Look at what comes in a kit</h4>
-            <div id="pics">
-                <figure>
-                    <img src="images/loop.png" alt="A loop which will hold the fabric">
-                    <figcaption>A loop designed to secure and support fabric.</figcaption>
+            <div id="kitpics">
+                <figure >
+                    <img src="images/loop.png" alt="A hoop which will hold the fabric">
+                    <figcaption>A hoop designed to secure and support fabric.</figcaption>
                 </figure>
 
-                <figure>
-                    <img src="images/fabric.png" alt="Fabric with a floral design embedded inside a loop">
-                    <figcaption>A floral-patterned fabric enclosed within a loop</figcaption>
+                <figure >
+                    <img src="images/fabric.png" alt="Fabric with a floral design embedded inside a hoop">
+                    <figcaption>A floral-patterned fabric enclosed within a hoop</figcaption>
                 </figure>
 
-                <figure>
+                <figure >
                     <img src="images/scissorNeedle.png" alt="Scissors and Needles">
                     <figcaption>Scissors and Needles provided by the kit</figcaption>
                 </figure>
 
-                <figure>
+                <figure >
                     <img src="images/thread.png" alt="Prepicked and counted thread">
                     <figcaption>Pre-picked and sorted thread, provided by the kit.</figcaption>
                 </figure>
 
-                <figure>
+                <figure >
                     <img src="images/instruction.png" alt="Instruction about what thread and stich to use">
                     <figcaption>Instructions detailing the thread color and stitch method used for this craft.</figcaption>
                 </figure>
             </div>
-                
         </section>
         <div></div>
-        <section id ="why">
+        <section id ="why" class="section">
             <h2>Why This</h2>
-            <p>During the winter season, my parents would get the whole family involved in embroidery. 
-                I do this hobby because it is a calm, creative, and peaceful way to spend my free time. We currently have a stocking in progress for a new family addition, 
-                Ringo Star, my mom is cat. 
+            <p> I do this hobby because it is a calm, creative, and peaceful way to spend my free time. 
                 For me, embroidery is a way to unwind, disconnect from the world, and give my mind a break.</p>
+            <div id="whypics">
+                <figure>
+                <img src="images/fabric.png" alt="fabric in loop">
+                <figcaption>What I am currently working on.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/two.png" alt="fabric embroidered with a floral design">
+                <figcaption>This was my previous project.</figcaption>
+            </figure>
+            </div>
         </section>
         <div></div>
-        <section id="ai">
+        <section id="ai" class="section">
             <h2>AI Prompts</h2>
         </section>
     </main>
+    <footer>
+        <p class="copy"><strong>Designed by <a href="https://webpages.charlotte.edu/anelso62/itis3135/nelson-inc.com/index.html">Nelson-Inc.</a> &copy; 2025</strong></p>
+        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    </footer>
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.section');
+    
+            sections.forEach(section => {
+                section.classList.remove('active'); 
+            });
+    
+            const activeSection = document.getElementById(sectionId);
+            activeSection.classList.add('active');
+        }
+    </script>
 </body>
 </html>
