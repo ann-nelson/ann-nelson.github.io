@@ -3,9 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tables</title>
+    <title>Ann Nelson ~ Ambitious Dragon ~ Table</title>
+    <link rel="stylesheet" href="styles/table.css">
 </head>
 <body>
-    
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <h2>List of Employee Information</h2>
+            <ol id="employee-list">
+                <li>Ann Nelson, anelson@adg.org, 10 years</li>
+                <li>Patti Hanbury, phanbury@adg.org, 8 years</li>
+                <li>Lynn Hanbury, lhanbury@adg.org, 6 years</li>
+                <li>Ryan Jarvis, rjarvis@adg.org, 6 years</li>
+                <li>Andrew Nelson, anelson2@adg.org, 4 years</li>
+                <li>Liz Nelson, lnelson@adg.org, 3 years</li>
+                <li>Michelle Hanbury, mhanbury@adg.org, 1 year</li>
+            </ol>
+            <h3 id="tabular">My Tabular Data</h3>
+        <table>
+                <thead>
+                    <tr id="columns">
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Years of Service</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ann Nelson</td>
+                        <td>anelson@adg.org</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Patti Hanbury</td>
+                        <td>phanbury@adg.org</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>Lynn Hanbury</td>
+                        <td>lhanbury@adg.org</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>Ryan Jarvis</td>
+                        <td>rjarvis@adg.org</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>Andrew Nelson</td>
+                        <td>anelson2@adg.org</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>Liz Nelson</td>
+                        <td>lnelson@adg.org</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Michelle Hanbury</td>
+                        <td>mhanbury@adg.org</td>
+                        <td>1</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3 id="data">Employee Data in Complex Table</h3>
+        <figure>
+            <figcaption>Employee Information</figcaption>
+            <table id="complex">
+                <thead id="column">
+                    <tr>
+                        <th>Category</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Years of Service</th>
+                        <th>Salary</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="bos"rowspan="1">Director</td>
+                        <td>Ann Nelson</td>
+                        <td>anelson@adg.org</td>
+                        <td>10</td>
+                        <td>$400,000</td>
+                    </tr>
+                    <tr id="one">
+                        <td id="ass"rowspan="2">Assistant Directors</td>
+                        <td>Patti Hanbury</td>
+                        <td>phanbury@adg.org</td>
+                        <td>8</td>
+                        <td>$300,000</td>
+                    </tr>
+                    <tr>
+                        <td>Lynn Hanbury</td>
+                        <td>lhanbury@adg.org</td>
+                        <td>6</td>
+                        <td>$260,000</td>
+                    </tr>
+                    <tr id="one">
+                        <td id="cur" rowspan="4">Curators</td>
+                        <td>Ryan Jarvis</td>
+                        <td>rjarvis@adg.org</td>
+                        <td>6</td>
+                        <td>$200,000</td>
+                    </tr>
+                    <tr>
+                        <td>Andrew Nelson</td>
+                        <td>anelson2@adg.org</td>
+                        <td>4</td>
+                        <td>$180,000</td>
+                    </tr>
+                    <tr>
+                        <td>Liz Nelson</td>
+                        <td>lnelson@adg.org</td>
+                        <td>3</td>
+                        <td>$100,000</td>
+                    </tr>
+                    <tr>
+                        <td>Michelle Hanbury</td>
+                        <td>mhanbury@adg.org</td>
+                        <td>1</td>
+                        <td>$80,000</td>
+                    </tr>
+                    <tr id="total">
+                        <th id="sum"colspan="3"><strong>Total Years of Service & Employee Salaries</strong></td>
+                        <td>38 </td>
+                        <td>$1,520,000</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </figure>
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/include.js"></script>
 </body>
 </html>
