@@ -197,3 +197,11 @@ form{
     color:aliceblue;
     border-radius: 15px;
 }
+
+.checkbox  {
+    display: flex;
+    align-items: center;
+}
+.checkbox label {
+    margin-left: 10px;
+}

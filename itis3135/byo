@@ -17,34 +17,52 @@
             
             <form>
                 <label for="name">Name</label>
-                <input type="text" id="name" name="name" required><br><br>
+                <input type="text" id="name" name="name" placeholder="Enter Response Here" required><br><br>
 
                 <label for="mascot">Mascot</label>
-                <input type="text" id="mascot" name="mascot" required><br><br>
+                <input type="text" id="mascot" name="mascot" placeholder="Enter Response Here" required><br><br>
 
                 <label for="image">Image</label>
-                <input type="file" id="" name="name" required><br><br>
+                <input type="file" id="" name="name" placeholder="Enter Response Here" required><br><br>
 
                 <label for="caption">Image Caption</label>
-                <input type="text" id="caption" name="caption" required><br><br>
+                <input type="text" id="caption" name="caption" placeholder="Enter Response Here" required><br><br>
 
-                <label for=""></label>
-                <input type="text" id="" name="" required><br><br>
+                <label for="personal">Personal Background</label>
+                <input type="text" id="personal" name="personal" placeholder="Enter Response Here" required><br><br>
 
-                <label for=""></label>
-                <input type="text" id="" name="" required><br><br>
+                <label for="pro">Professional Background</label>
+                <input type="text" id="pro" name="pro" placeholder="Enter Response Here" required><br><br>
 
                 <label for="academic">Academic Background</label>
-                <input type="text" id="academic" name="academic" required><br><br>
+                <input type="text" id="academic" name="academic" placeholder="Enter Response Here" required><br><br>
 
-                <label for="webDevelopment">Background in Web Development</label>
-                <input type="text" id="webDevelopment" name="webDevelopment" required><br><br>
+                <label for="web">Background in Web Development</label>
+                <input type="text" id="web" name="web" placeholder="Enter Response Here" required><br><br>
 
-                <label for=""></label>
-                <input type="" id="" name="" required><br><br>
+                <label for="computer">Primary Computer Platform</label>
+                <input type="text" id="computer" name="computer" placeholder="Enter Response Here" required><br><br>
                 
-                <label for=""></label>
-                <input type="" id="" name="" required><br><br>
+                <label for="courses">Courses currently taking</label><br>
+                <div id="class">
+                <button type="button" onclick="addClassField()">Add Course</button>
+                <button type="button" id="deleteClass" onclick="deleteClassField()">Delete Course</button>
+                </div>
+                <br><br>
+
+                <label for="funny">Funny Thing?</label>
+                <input type="text" id="funny" name="funny" placeholder="Enter Response Here" required><br><br>
+                
+                <label for="else">Anything else?</label>
+                <input type="text" id="else" name="else" placeholder="Enter Response Here" required><br><br>
+
+                <div id="checkbox">
+                    <input type="checkbox" id="acknowledge" name="acknowledge" required>
+                    <label for="acknowledge">"I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available."</label>
+                    <br><br>
+                </div>
+                
+
             </form>
 <br><br>
 
