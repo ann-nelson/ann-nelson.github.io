@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ann Nelson ~ Ambitious Dragon ~ BYO Intro</title>
     <link rel="stylesheet" href="styles/form.css">
-    <script src="scripts/form.js" defer></script>
+    
+    
 </head>
 <body>
     <header>
@@ -18,43 +19,43 @@
             
             <form method="POST">
                 <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Enter Response Here" required><br><br>
+                <textarea type="text" id="name" name="name" placeholder="Enter Response Here" required></textarea><br><br>
 
                 <label for="mascot">Mascot</label>
-                <input type="text" id="mascot" name="mascot" placeholder="Enter Response Here" required><br><br>
+                <textarea type="text" id="mascot" name="mascot" placeholder="Enter Response Here" required></textarea><br><br>
 
                 <label for="image">Image</label>
-                <input type="file" id="" name="name" placeholder="Enter Response Here" required><br><br>
+                <input type="file" id="" name="name" required><br><br>
 
                 <label for="caption">Image Caption</label>
-                <input type="text" id="caption" name="caption" placeholder="Enter Response Here" required><br><br>
+                <textarea type="text" id="caption" name="caption" row="2" placeholder="Enter Response Here" required></textarea><br><br>
 
                 <label for="personal">Personal Background</label>
-                <input type="text" id="personal" name="personal" placeholder="Enter Response Here" required><br><br>
+                <textarea type="text" id="personal" name="personal" row="4" placeholder="Enter Response Here" required></textarea><br><br>
 
                 <label for="pro">Professional Background</label>
-                <input type="text" id="pro" name="pro" placeholder="Enter Response Here" required><br><br>
+                <textarea type="text" id="pro" name="pro" row="4" placeholder="Enter Response Here" required></textarea><br><br>
 
                 <label for="academic">Academic Background</label>
-                <input type="text" id="academic" name="academic" placeholder="Enter Response Here" required><br><br>
+                <textarea type="text" id="academic" name="academic" row="4" placeholder="Enter Response Here" required></textarea><br><br>
 
                 <label for="web">Background in Web Development</label>
-                <input type="text" id="web" name="web" placeholder="Enter Response Here" required><br><br>
+                <textarea type="text" id="web" name="web" row="4" placeholder="Enter Response Here" required></textarea><br><br>
 
                 <label for="computer">Primary Computer Platform</label>
-                <input type="text" id="computer" name="computer" placeholder="Enter Response Here" required><br><br>
+                <textarea type="text" id="computer" name="computer" row="4" placeholder="Enter Response Here" required></textarea><br><br>
                 
                 <label for="courses">Courses currently taking</label><br>
-                <div id="class">
-                <button type="button" onclick="addClass()">Add Course</button>
-                <button type="button" id="deleteClass" onclick="deleteClass()">Delete Course</button>
-                </div><br><br>
+                <div id="class"></div>
+                <button type="button" onclick="addClass()">Add Class</button>
+                <button type="button" onclick="deleteClass()">Delete Class</button>
+                <br><br>
 
                 <label for="funny">Funny Thing?</label>
-                <input type="text" id="funny" name="funny" placeholder="Enter Response Here" required><br><br>
+                <textarea type="text" id="funny" name="funny" row="4" placeholder="Enter Response Here" required></textarea><br><br>
                 
                 <label for="else">Anything else?</label>
-                <input type="text" id="else" name="else" placeholder="Enter Response Here" required><br><br>
+                <textarea type="text" id="else" name="else" row="4" placeholder="Enter Response Here" required></textarea><br><br>
 
                 <div id="checkbox">
                     <input type="checkbox" id="acknowledge" name="acknowledge" required>
@@ -62,7 +63,8 @@
                     <br><br>
                 </div>
                 
-
+                <button type="submit">Submit</button>
+                <button type="button" onclick="resetForm()">Reset Form</button>
             </form>
 <br><br>
 
@@ -71,6 +73,8 @@
     <footer>
         <div data-include="components/footer.html"></div>
     </footer>
+    <script src="scripts/form.js"></script>
     <script src="scripts/include.js"></script>
+    
 </body>
 </html>

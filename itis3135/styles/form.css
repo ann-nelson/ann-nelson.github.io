@@ -198,6 +198,10 @@ form{
     border-radius: 15px;
 }
 
+form input{
+    text-wrap-style:balance;
+}
+
 .checkbox  {
     display: flex;
     align-items: center;
