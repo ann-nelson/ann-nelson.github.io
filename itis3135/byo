@@ -3,15 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ann Nelson ~ Ambitious Dragon ~ BYO Forms</title>
-    <link rel="stylesheet" href="styles/default.css">
+    <title>Ann Nelson ~ Ambitious Dragon ~ BYO Intro</title>
+    <link rel="stylesheet" href="styles/form.css">
 </head>
 <body>
     <header>
         <div data-include="components/header.html"></div>
     </header>
     <main>
-        <h2>Welcome</h2>
+        <h2>Build Your Own Intro</h2>
+        <h3>It's time to build your own intro page! 
+            Please complete the form below so we can create your personalized page.</h3>
+            
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="mascot">Mascot</label>
+                <input type="text" id="mascot" name="mascot" required><br><br>
+
+                <label for="image">Image</label>
+                <input type="file" id="" name="name" required><br><br>
+
+                <label for="caption">Image Caption</label>
+                <input type="text" id="caption" name="caption" required><br><br>
+
+                <label for=""></label>
+                <input type="text" id="" name="" required><br><br>
+
+                <label for=""></label>
+                <input type="text" id="" name="" required><br><br>
+
+                <label for="academic">Academic Background</label>
+                <input type="text" id="academic" name="academic" required><br><br>
+
+                <label for="webDevelopment">Background in Web Development</label>
+                <input type="text" id="webDevelopment" name="webDevelopment" required><br><br>
+
+                <label for=""></label>
+                <input type="" id="" name="" required><br><br>
+                
+                <label for=""></label>
+                <input type="" id="" name="" required><br><br>
+            </form>
+<br><br>
+
         
     </main>
     <footer>
