@@ -2,7 +2,7 @@ function validateForm(event) {
     const requiredInputs = document.querySelectorAll('input[required]');
     let allFilled = true;
     
-    requiredInputs.forEach(input => {
+    requiredInputs.forEach((input) => {
         if (!input.value.trim()) {
             allFilled = false;
             input.style.borderColor = 'red'; 
