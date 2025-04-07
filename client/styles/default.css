@@ -61,12 +61,4 @@ main{
         width: 100%;
 }
 
-form{
-    text-align: left;
-    display:grid;
-    padding: 40px;
-    font-weight: bold;
-    background-color: #5171A5;
-    color:#D5C5C8;
-    border-radius: 15px;
-}
+

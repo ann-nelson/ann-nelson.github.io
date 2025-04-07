@@ -1,11 +1,70 @@
+body{
+    height: 100%;
+    max-width: 100%;
+    min-width: none;
+    background-color: #AF5D63;
+    font-family: 'Courier New', Courier, monospace;
+    color:#D5C5C8;
 }
-.form {
-  max-width: 600px;
-  margin: 0 auto;
-  background: #fff;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+h1{
+    background-color: #33658A;
+    padding: 20px;
+    text-align: center;
+    color:#A5E6BA;
+    margin: -8px;
+}
+nav{
+    background-color: #5171A5;
+    width: 95%;
+    display: block;
+    margin: 0 auto;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    justify-content: center;
+    font-size: large;
+}
+#top{
+    padding-top: 10px;
+}
+#bottom{
+    padding-bottom: 10px;
+}
+a{
+    text-decoration: none;
+    color:#A5E6BA;
+}
+a:hover{
+    font-weight: bold;
+}
+main{
+    max-width: 90%;
+    display: block;
+    margin:0 auto;
+}
+
+.footer{
+        background-color: #33658A;
+        display:realtive;
+        padding: 20px;
+        margin:-8px;
+        text-align: center;
+        color:#A5E6BA;
+        bottom: 0;
+        padding-bottom: 10px;
+        width: 100%;
+}
+
+form{
+    text-align: left;
+    display:grid;
+    padding: 40px;
+    font-weight: bold;
+    background-color: #5171A5;
+    color:#D5C5C8;
+    border-radius: 15px;
 }
 .form h2 {
   margin-bottom: 1rem;
