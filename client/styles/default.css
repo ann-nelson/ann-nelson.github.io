@@ -53,17 +53,6 @@ h2{
     padding: 5px;
     border-radius: 10px;;
 }
-.footer{
-        background-color: #33658A;
-        display:realtive;
-        padding: 20px;
-        margin:-8px;
-        text-align: center;
-        color:#A5E6BA;
-        bottom: 0;
-        padding-bottom: 10px;
-        width: 100%;
-}
 
 .slider-container {
     position: relative;
