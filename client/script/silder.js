@@ -1,32 +1,30 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const sections = document.querySelectorAll("section");
+    const sliderContainers = document.querySelectorAll(".slider-container");
+  
+    sliderContainers.forEach(container => {
+      const slides = container.querySelectorAll(".slide");
+      let currentIndex = 0;
+  
 
-    sections.forEach(section => {
-        const slides = section.querySelectorAll(".slider > div");
-        let currentIndex = 0;
+      function showSlide(index) {
+        slides.forEach(slide => slide.style.display = "none"); // Hide all slides
+        slides[index].style.display = "block"; 
+      }
+  
+      showSlide(currentIndex);
 
-        slides.forEach(slide => slide.classList.add("slide"));
-        slides[currentIndex].classList.add("active");
+      const prevBtn = container.querySelector(".prev");
+      const nextBtn = container.querySelector(".next");
 
-        const prevBtn = section.querySelector(".prev");
-        const nextBtn = section.querySelector(".next");
+      nextBtn.addEventListener("click", function () {
+        currentIndex = (currentIndex + 1) % slides.length; // Loop back to the first slide
+        showSlide(currentIndex);
+      });
 
-        function showSlide(index) {
-            slides.forEach(slide => slide.classList.remove("active"));
-            slides[index].classList.add("active");
-        }
-
-        function nextSlide() {
-            currentIndex = (currentIndex + 1) % slides.length;
-            showSlide(currentIndex);
-        }
-
-        function prevSlide() {
-            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-            showSlide(currentIndex);
-        }
-
-        nextBtn.addEventListener("click", nextSlide);
-        prevBtn.addEventListener("click", prevSlide);
+      prevBtn.addEventListener("click", function () {
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length; // Loop to the last slide if at the beginning
+        showSlide(currentIndex);
+      });
     });
-});
+  });
+  
