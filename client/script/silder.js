@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
   
 
       function showSlide(index) {
-        slides.forEach(slide => slide.style.display = "none"); // Hide all slides
+        slides.forEach(slide => slide.style.display = "none"); 
         slides[index].style.display = "block"; 
       }
   
@@ -17,12 +17,12 @@ document.addEventListener("DOMContentLoaded", function () {
       const nextBtn = container.querySelector(".next");
 
       nextBtn.addEventListener("click", function () {
-        currentIndex = (currentIndex + 1) % slides.length; // Loop back to the first slide
+        currentIndex = (currentIndex + 1) % slides.length; 
         showSlide(currentIndex);
       });
 
       prevBtn.addEventListener("click", function () {
-        currentIndex = (currentIndex - 1 + slides.length) % slides.length; // Loop to the last slide if at the beginning
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length; 
         showSlide(currentIndex);
       });
     });
