@@ -10,6 +10,71 @@
     <header>
         <div data-include="components/header.html"></div>
     </header>
+<main>
+    <h2>Build Your Own Intro</h2>
+    <div class="contact-form">
+        <h2>Contact Me</h2>
+        <form id="form">
+          <label for="name">Full Name*</label>
+          <input type="text" id="name" name="name" required>
+            <br>
+          <label for="phone">Phone Number*</label>
+          <input type="text" id="phone" name="phone" placeholder="(###) ### - ####" required>
+          <br>
+          <label for="email">Email Address*</label>
+          <input type="email" id="email" name="email" required>
+            <br>
+          <label for="role">You are a:</label>
+          <select id="role" name="role">
+            <option value="Private Client">Private Client</option>
+            <option value="Business">Business / Organization</option>
+            <option value="Artist">Fellow Artist / Collaborator</option>
+            <option value="Other">Other</option>
+          </select>
+          <br>
+          <label>What kind of work are you interested in?</label>
+          <div class="checkbox-group">
+            <label><input type="checkbox" name="service" value="drawn">Drawings, Paintings, etc.</label>
+            <label><input type="checkbox" name="service" value="3d"> Sculpture, 3D work</label>
+            <label><input type="checkbox" name="service" value="built"> Tile Work, Flooring, Carpentry, etc. </label>
+            <label><input type="checkbox" name="service" value="mixed"> Mixed Media</label>
+            <label><input type="checkbox" name="service" value="collab"> Collaboration</label>
+          </div>
+      <br>
+          <label for="message">Tell me about your project or idea*</label>
+          <textarea id="message" name="message" required></textarea>
+            <br>
+          <label for="deadline">Do you have a deadline or timeline?</label>
+          <div class="checkbox-group">
+            <label><input type="radio" name="timeline" value="yes" checked> Yes</label>
+            <label><input type="radio" name="timeline" value="no"> No</label>
+          </div>
+          <br>
+          <lable for="deadline">If you do have a deadline then what is the expected start and end date?</lable>
+          <label>Start Date <input type="date" id="deadline" name="deadline"></label>
+          <label>End Date <input type="date" id="deadline" name="deadline"></label>
+            <br>
+          <label for="ref">How did you hear about me?</label>
+          <input type="text" id="ref" name="ref">
+          <br>
+          <label for="file">Upload reference image (optional):</label>
+          <input type="file" id="file" name="file">
+          <br>
+          <label>Preferred contact method:</label>
+          <div class="checkbox-group">
+            <label><input type="radio" name="contact" value="Email" checked> Email</label>
+            <label><input type="radio" name="contact" value="Phone"> Phone</label>
+            <label><input type="radio" name="contact" value="Text"> Text</label>
+          </div>
+          <br>
+          <button type="submit">Submit</button>
+          <div id="formMessage" class="success"></div>
+        </form>
+      </div>
+           
+<br><br>
+
+</main>
 
     <footer>
         <div data-include="components/footer.html"></div>
