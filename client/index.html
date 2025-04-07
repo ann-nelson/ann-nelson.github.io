@@ -71,8 +71,15 @@
         <div data-include="components/footer.html"></div>
     </footer>
 
-    <script src="/client/script/include.js"></script>
-    <script src="/client/script/silder.js"></script>
+    <script src="script/include.js"></script>
+    <script src="script/silder.js"></script>
+    <script>
+      window.addEventListener('DOMContentLoaded', () => {
+          if (window.HTMLInclude) {
+              HTMLInclude();
+          }
+      });
+    </script>
 </body>
 
 </html>
