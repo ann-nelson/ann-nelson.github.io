@@ -117,3 +117,7 @@ section{
         padding-bottom: 10px;
         width: 100%;
 }
+
+.valid{
+  background-color: #33658A;
+}
