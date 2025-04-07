@@ -1,13 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
     const sliderContainers = document.querySelectorAll(".slider-container");
   
-    sliderContainers.forEach(container => {
+    sliderContainers.forEach((container) => {
       const slides = container.querySelectorAll(".slide");
       let currentIndex = 0;
   
 
       function showSlide(index) {
-        slides.forEach(slide => slide.style.display = "none"); 
+        slides.forEach((slide) => slide.style.display = "none"); 
         slides[index].style.display = "block"; 
       }
   
