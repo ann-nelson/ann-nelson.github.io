@@ -131,3 +131,12 @@ h2{
 .valid{
   background-color: #33658A;
 }
+
+.test {
+  display: flex;
+  align-items: center;
+}
+
+.test img {
+  display: block;
+}
