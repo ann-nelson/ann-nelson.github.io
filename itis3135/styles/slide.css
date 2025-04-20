@@ -187,3 +187,36 @@ p {
         width: 95%;
     }
 }
+.slide {
+    display: none;
+    text-align: center;
+  }
+  
+  .slider-container {
+    position: relative;
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  .slider-container .prev,
+  .slider-container .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    user-select: none;
+    transform: translateY(-50%);
+  }
+  
+  .slider-container .prev {
+    left: 0;
+  }
+  
+  .slider-container .next {
+    right: 0;
+  }
