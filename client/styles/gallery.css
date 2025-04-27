@@ -6,12 +6,18 @@ body{
   font-family: 'Courier New', Courier, monospace;
   color:#1b2537;
 }
-h1{
+
+h1, #slogan{
   background-color: #33658A;
   padding: 20px;
   text-align: center;
   color:#A5E6BA;
   margin: -8px;
+}
+
+#slogan{
+  padding-top: 0;
+  color:#82f8ab;
 }
 
 h2{
@@ -55,9 +61,11 @@ a{
   text-decoration: none;
   color:#A5E6BA;
 }
+
 a:hover{
   font-weight: bold;
 }
+
 main{
   max-width: 90%;
   display: block;

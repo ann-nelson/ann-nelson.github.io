@@ -6,13 +6,19 @@ body{
   font-family: 'Courier New', Courier, monospace;
   color:#D5C5C8;
 }
-h1{
+h1, #slogan{
   background-color: #33658A;
   padding: 20px;
   text-align: center;
   color:#A5E6BA;
   margin: -8px;
 }
+
+#slogan{
+  padding-top: 0;
+  color:#82f8ab;
+}
+
 nav{
   background-color: #5171A5;
   width: 95%;
