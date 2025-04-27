@@ -45,13 +45,28 @@ main{
   margin:0 auto;
 }
 h2{
-  text-align: left;
+  text-align: center;
+  border: #A5E6BA solid 3px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 5px;
+  margin-bottom: 10px;
+  font-size: xx-large;
 }
-#intro{
-  color: #AF5D63;
+
+h3{
+  text-align: center;
+  font-size: x-large;
+}
+figcaption{
+  font-size: larger;
+}
+
+#intro, #short-bio, #featured{
+  color: #234884;
   background-color:#D5C5C8;
   padding: 5px;
-  border-radius: 10px;;
+  border-radius: 10px;
 }
 
 .slider-container {
@@ -68,12 +83,12 @@ h2{
 }
 
 .pic-num {
-  position: absolute;
+  position: relative;
   top: 10px;
   left: 50%;
   transform: translateX(-50%);
   font-size: 1.2rem;
-  color: white;
+  color: #AF5D63;
   font-weight: bold;
   z-index: 10; 
 }
@@ -106,6 +121,7 @@ button.prev:hover, button.next:hover {
   
 .footer{
   background-color: #33658A;
+  width: 100%;
   display:realtive;
   padding: 20px;
   margin:-8px;
@@ -119,7 +135,7 @@ button.prev:hover, button.next:hover {
   background-color:#D5C5C8;
   padding:10px;
   border-radius: 10px;
-  color:#33658A;
+  color:#234884;;
 }
 
 .testimonials{
@@ -131,6 +147,8 @@ button.prev:hover, button.next:hover {
 
 section{
   font-size: large;
+  width: 75%;
+  margin: 0 auto;
 }
 
 .valid{
