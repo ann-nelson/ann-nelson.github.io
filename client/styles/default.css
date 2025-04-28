@@ -156,6 +156,6 @@ section{
 }
 
 nav .active {
-  color: #ff6600; 
-  font-weight: bold;
+  color: #ff6600 !important;
+  font-weight: bold !important;  
 }
