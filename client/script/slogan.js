@@ -19,4 +19,18 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     moveElements();
+
+    const slogans = [
+        "Art Made. Dreams Built",
+        "Creativity in Every Stroke",
+        "Building Dreams, One Brush at a Time",
+        "Designs that Inspire"
+    ];
+    
+    let sloganIndex = 0;
+
+    setInterval(() => {
+        sloganIndex = (sloganIndex + 1) % slogans.length;
+        slogan.innerHTML = `<em>${slogans[sloganIndex]}</em>`;
+    }, 3000); 
 });
