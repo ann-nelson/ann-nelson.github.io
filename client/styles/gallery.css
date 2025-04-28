@@ -7,6 +7,11 @@ body{
   color:#1b2537;
 }
 
+nav a.active {
+  color: #ff6600; 
+  font-weight: bold;
+}
+
 h1, #slogan{
   background-color: #33658A;
   padding: 20px;

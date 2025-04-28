@@ -51,6 +51,12 @@ a{
 a:hover{
   font-weight: bold;
 }
+
+nav a.active {
+  color: #ff6600; 
+  font-weight: bold;
+}
+
 main{
   max-width: 70%;
   display: block;
