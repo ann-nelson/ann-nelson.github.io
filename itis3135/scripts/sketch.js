@@ -1,13 +1,34 @@
 function setup() { 
-    // Creates a canvas 600 pixel W x 400 pixels H.
-    createCanvas(600, 400);
-}
-function draw() {
-    background(49, 107, 115);
-    fill("salmon"); //yellow
-    stroke("orange"); 
-    strokeWeight(20); 
-    circle(40, 50, 100); 
+    createCanvas(800, 400,WEBGL);
+    angleMode(DEGREES);
+    strokeWeight(8);
+    noFill();
+    stroke(32, 8, 64);
 }
 
-//step 7 ps5 instruction doc
+function draw() {
+    background(49, 107, 115);
+    orbitControl();
+
+    for (let zAngle = 0; zAngle<180; zAngle += 30){
+        for (let xAngle = 0; xAngle < 360; xAngle += 30){
+            push();
+
+            rotateZ(zAngle);
+            rotateX(xAngle);
+
+            translate(0, 400, 0);
+            stroke("cyan");
+            sphere();
+            pop();
+            stroke("purple");
+            cone();
+            pop();
+
+            
+            
+        }
+    }
+}
+
+
