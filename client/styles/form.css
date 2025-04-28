@@ -53,8 +53,8 @@ a:hover{
 }
 
 nav .active {
-  color: #ff6600 !important; 
-  font-weight: bold !important; 
+  color: #ff6600; 
+  font-weight: bold; 
 }
 
 main{

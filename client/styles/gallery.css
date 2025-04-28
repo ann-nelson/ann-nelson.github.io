@@ -8,8 +8,8 @@ body{
 }
 
 nav a.active {
-  color: #ff6600 !important; 
-  font-weight: bold !important;  
+  color: #ff6600; 
+  font-weight: bold;  
 }
 
 h1, #slogan{
