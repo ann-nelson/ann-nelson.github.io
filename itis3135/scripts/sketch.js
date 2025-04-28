@@ -19,7 +19,7 @@ function draw() {
 
             translate(0, 400, 0);
             stroke("cyan");
-            fill("orange")
+            fill("orange");
             cone();
             pop();
         }
