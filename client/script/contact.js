@@ -1,3 +1,13 @@
+function validateField(input, errorId) {
+  const errorMessage = document.getElementById(errorId);
+  if (!input.value.trim()) {
+      errorMessage.textContent = `${input.name} is required.`;
+      errorMessage.className = "error";
+  } else {
+      errorMessage.textContent = '';
+  }
+}
+
 document.getElementById('form').addEventListener('submit', function(e) {
   e.preventDefault();
 
@@ -19,38 +29,28 @@ document.getElementById('form').addEventListener('submit', function(e) {
   this.reset();
 });
 
-document.getElementById('name').addEventListener('input', function() {
+document.getElementById('name').addEventListener('input', (function() {
   validateField(this, 'nameError');
-});
-document.getElementById('phone').addEventListener('input', function() {
+}));
+document.getElementById('phone').addEventListener('input', (function() {
   validateField(this, 'phoneError');
-});
-document.getElementById('email').addEventListener('input', function() {
+}));
+document.getElementById('email').addEventListener('input', (function() {
   validateField(this, 'emailError');
-});
-document.getElementById('message').addEventListener('input', function() {
+}));
+document.getElementById('message').addEventListener('input', (function() {
   validateField(this, 'messageError');
-});
-
-function validateField(input, errorId) {
-  const errorMessage = document.getElementById(errorId);
-  if (!input.value.trim()) {
-      errorMessage.textContent = `${input.name} is required.`;
-      errorMessage.className = "error";
-  } else {
-      errorMessage.textContent = '';
-  }
-}
+}));
 
 const formFields = ['name', 'phone', 'email', 'message'];
-formFields.forEach(field => {
+formFields.forEach(function(field) {
   const input = document.getElementById(field);
   const errorElement = document.createElement('span');
   errorElement.id = `${field}Error`;
   input.parentNode.appendChild(errorElement);
 });
 
-document.querySelectorAll('input[name="timeline"]').forEach((radio) => {
+document.querySelectorAll('input[name="timeline"]').forEach(function(radio) {
   radio.addEventListener('change', function() {
       const timelineDiv = document.getElementById('timeline');
       if (this.value === 'yes') {
