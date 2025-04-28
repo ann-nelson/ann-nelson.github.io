@@ -64,12 +64,11 @@ main{
 
 .footer{
   background-color: #33658A;
-  display:realtive;
-  margin:-8px;
-  text-align: center;
   color:#A5E6BA;
-  padding-bottom: 10px;
-  width:100%;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+  border-radius: 15px;
 }
 
 form {

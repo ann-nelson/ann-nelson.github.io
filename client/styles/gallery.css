@@ -133,12 +133,11 @@ button.prev:hover, button.next:hover {
 
 .footer{
   background-color: #33658A;
-  display:realtive;
-  margin:-8px;
-  text-align: center;
   color:#A5E6BA;
+  text-align: center;
+  width: 100%;
   bottom: 0;
-  width:100%;
+  border-radius: 15px;
 }
 
 .valid{
