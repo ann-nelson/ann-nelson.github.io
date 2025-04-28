@@ -73,13 +73,12 @@ main{
 }
 
 form {
-  width: 70%;
-  margin: 2rem auto;
+  margin: 0 auto;
+  padding: 15px;
   background-color: #5171A5;
   color: #69e490;
   border-radius: 15px;
   font-weight: bolder;
-  border: #5171A5 solid 10px;
   display: flex;
   flex-direction: column;
 }
@@ -89,7 +88,6 @@ label {
   margin-top: 1rem;
 }
 input, textarea, select {
-  padding: 0.3rem;
   margin-top: 0.5rem;
   border-radius: 6px;
   font-size: large;
