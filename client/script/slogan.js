@@ -13,5 +13,5 @@ document.addEventListener('DOMContentLoaded', function() {
     setInterval(() => {
         sloganIndex = (sloganIndex + 1) % slogans.length;
         sloganElement.innerHTML = `<em>${slogans[sloganIndex]}</em>`;
-    }, 5000); 
+    }, 3000); 
 });
