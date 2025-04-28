@@ -155,7 +155,7 @@ section{
   background-color: #33658A;
 }
 
-nav a.active {
+nav .active {
   color: #ff6600; 
   font-weight: bold;
 }
