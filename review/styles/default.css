@@ -115,3 +115,18 @@ section {
         columns: 1;
     }
 }
+
+figure {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    flex-direction: column; 
+}
+img{
+    width: 80%;
+}
+figcaption{
+    text-align: center;
+    color:#056e6e;
+    font-weight: bold;
+}
