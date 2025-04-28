@@ -68,8 +68,8 @@ main{
   margin:-8px;
   text-align: center;
   color:#A5E6BA;
-  bottom: 0;
   padding-bottom: 10px;
+  width:100%;
 }
 
 form {
