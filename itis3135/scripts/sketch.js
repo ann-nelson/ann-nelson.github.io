@@ -1,5 +1,5 @@
 function setup() { 
-    createCanvas(800, 400,WEBGL);
+    createCanvas(600, 400, WEBGL);
     angleMode(DEGREES);
     strokeWeight(8);
     noFill();
@@ -21,12 +21,6 @@ function draw() {
             stroke("cyan");
             sphere();
             pop();
-            stroke("purple");
-            cone();
-            pop();
-
-            
-            
         }
     }
 }
