@@ -65,7 +65,6 @@ main{
 .footer{
   background-color: #33658A;
   display:realtive;
-  padding: 20px;
   margin:-8px;
   text-align: center;
   color:#A5E6BA;
@@ -76,11 +75,11 @@ main{
 form {
   width: 70%;
   margin: 2rem auto;
-  padding: 2rem;
   background-color: #5171A5;
   color: #69e490;
   border-radius: 15px;
   font-weight: bolder;
+  border: #5171A5 solid 10px;
   display: flex;
   flex-direction: column;
 }
