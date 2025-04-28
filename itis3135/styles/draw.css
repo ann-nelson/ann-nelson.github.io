@@ -29,10 +29,27 @@ h1 {
 
 h2 {
     margin-top: 15px;
-    margin-bottom: -2px;
     font-family: Georgia, serif;
     color: #033E3E;
-    font-size: 1.8rem;
+    margin-bottom: 5px;
+    
+}
+h3{
+    text-align: center;
+    font-style: italic;
+    color: rgb(70, 104, 12);
+    font-size: large;
+    margin: 0 auto;
+}
+
+h3 a {
+    color: rgb(70, 104, 12);
+    text-decoration: none;
+}
+
+h3 a:hover {
+    color: rgb(70, 104, 12);
+    text-decoration:underline;
 }
 
 nav ul {
@@ -118,10 +135,6 @@ footer a:hover {
     margin-top: 2.5px;
 }
 
-p {
-    text-align: left;
-}
-
 .copy, .certified {
     text-align: center;
 }
@@ -134,31 +147,8 @@ p {
     font-size: medium;
 }
 
-.crap, .evaluate {
-    text-align: left;
-}
 
-.good a, .bad a {
-    text-decoration: none;
-    color: #033E3E;
-}
 
-.good a:hover, .bad a:hover {
-    text-decoration: underline;
-}
-
-.good p, .bad p, h3 {
-    text-align: left;
-    padding-left: 30px;
-}
-
-.good ul, .bad ul {
-    padding-left: 45px;
-}
-
-.space {
-    border: dotted 2pt #056e6e;
-}
 
 @media screen and (max-width: 992px) {
     .content {
