@@ -17,7 +17,7 @@
         <h3>It's time to build your own intro page! 
             Please complete the form below so we can create your personalized page.</h3>
             
-            <form method="POST">
+            <form method="POST" enctype="multipart/form-data" onsubmit="submitForm(event)">
                 <label for="name">Name</label>
                 <textarea  id="name" name="name" placeholder="Enter Response Here" required></textarea><br><br>
 
@@ -48,7 +48,7 @@
                 <label id="course">Courses currently taking</label><br>
                 <div id="class"></div>
                 <button type="button" onclick="addClass()">Add Class</button>
-                <button type="button" onclick="deleteClass()">Delete Class</button>
+                <button type="button" onclick="deleteClass()" style="display: none;">Delete Class</button>
                 <br><br>
 
                 <label for="funny">Funny Thing?</label>
