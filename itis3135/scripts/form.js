@@ -85,6 +85,10 @@ function submitForm(event) {
     const courseTitles = formData.getAll('course-title[]');
     const courseDescripts = formData.getAll('course-descript[]');
 
+    function formatLabel(key) {
+        return key.replace(/[-_]/g, ' ').replace(/\b\w/g, (l) => l.toUpperCase());
+    }
+    
     // Loop through all entries except course[] and image
     formData.forEach((value, key) => {
         if (key === 'course-title[]' || key === 'course-descript[]') return;
@@ -134,7 +138,7 @@ function submitForm(event) {
 }
 
 function formatLabel(key) {
-    return key.replace(/[-_]/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+    return key.replace(/[-_]/g, ' ').replace(/\b\w/g, (l) => l.toUpperCase());
 }
 
 
