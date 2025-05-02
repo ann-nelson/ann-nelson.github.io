@@ -1,80 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ann Nelson ~ Ambitious Dragon ~ BYO Intro</title>
-    <link rel="stylesheet" href="styles/form.css">
-    
-    
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ann Nelson ~ Ambitious Dragon ~ BYO Intro</title>
+  <link rel="stylesheet" href="styles/form.css" />
 </head>
 <body>
-    <header>
-        <div data-include="components/header.html"></div>
-    </header>
-    <main>
-        <h2>Build Your Own Intro</h2>
-        <h3>It's time to build your own intro page! 
-            Please complete the form below so we can create your personalized page.</h3>
-            
-            <form method="POST" enctype="multipart/form-data" onsubmit="submitForm(event)">
-                <label for="name">Name</label>
-                <input  id="name" name="name" placeholder="Enter Response Here" required><br><br>
+  <header>
+    <div data-include="components/header.html"></div>
+  </header>
 
-                <label for="mascot">Mascot</label>
-                <textarea  id="mascot" name="mascot" placeholder="Enter Response Here" required></textarea><br><br>
+  <main>
+    <h2>Build Your Own Intro</h2>
+    <h3>
+      It's time to build your own intro page! <br />
+      Please complete the form below so we can create your personalized page.
+    </h3>
 
-                <label for="image">Image</label>
-                <input type="file" id="image" name="image" required><br><br>
+    <form method="POST" enctype="multipart/form-data" onsubmit="submitForm(event)">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter Response Here" required /><br /><br />
 
-                <label for="caption">Image Caption</label>
-                <textarea  id="caption" name="caption"  placeholder="Enter Response Here" required></textarea><br><br>
+      <label for="mascot">Mascot</label>
+      <textarea id="mascot" name="mascot" placeholder="Enter Response Here" required></textarea><br /><br />
 
-                <label for="personal">Personal Background</label>
-                <textarea  id="personal" name="personal"  placeholder="Enter Response Here" required></textarea><br><br>
+      <label for="image">Image</label>
+      <input type="file" id="image" name="image" required /><br /><br />
 
-                <label for="pro">Professional Background</label>
-                <textarea  id="pro" name="pro"  placeholder="Enter Response Here" required></textarea><br><br>
+      <label for="caption">Image Caption</label>
+      <textarea id="caption" name="caption" placeholder="Enter Response Here" required></textarea><br /><br />
 
-                <label for="academic">Academic Background</label>
-                <textarea  id="academic" name="academic"  placeholder="Enter Response Here" required></textarea><br><br>
+      <label for="personal">Personal Background</label>
+      <textarea id="personal" name="personal" placeholder="Enter Response Here" required></textarea><br /><br />
 
-                <label for="web">Background in Web Development</label>
-                <textarea  id="web" name="web"  placeholder="Enter Response Here" required></textarea><br><br>
+      <label for="pro">Professional Background</label>
+      <textarea id="pro" name="pro" placeholder="Enter Response Here" required></textarea><br /><br />
 
-                <label for="computer">Primary Computer Platform</label>
-                <textarea  id="computer" name="computer"  placeholder="Enter Response Here" required></textarea><br><br>
-                
-                <label id="course">Courses currently taking</label><br>
-                <div id="class"></div>
-                <button type="button" id="addClass" onclick="addClass()">Add Class</button>
-                <button type="button" id="deleteClass" onclick="deleteClass()" style="display: none;">Delete Class</button>
-                <br><br>
+      <label for="academic">Academic Background</label>
+      <textarea id="academic" name="academic" placeholder="Enter Response Here" required></textarea><br /><br />
 
-                <label for="funny">Funny Thing?</label>
-                <textarea  id="funny" name="funny"  placeholder="Enter Response Here" required></textarea><br><br>
-                
-                <label for="else">Anything else?</label>
-                <textarea  id="else" name="else" placeholder="Enter Response Here" required></textarea><br><br>
+      <label for="web">Background in Web Development</label>
+      <textarea id="web" name="web" placeholder="Enter Response Here" required></textarea><br /><br />
 
-                <div id="checkbox">
-                    <input type="checkbox" id="acknowledge" name="acknowledge" required>
-                    <label for="acknowledge">"I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available."</label>
-                    <br><br>
-                </div>
-                
-                <button type="submit">Submit</button>
-                <button type="button" onclick="resetForm()">Reset Form</button>
-            </form>
-<br><br>
+      <label for="computer">Primary Computer Platform</label>
+      <textarea id="computer" name="computer" placeholder="Enter Response Here" required></textarea><br /><br />
 
-        
-    </main>
-    <footer>
-        <div data-include="components/footer.html"></div>
-    </footer>
-    <script src="scripts/form.js"></script>
-    <script src="scripts/include.js"></script>
-    
+      <label>Courses Currently Taking</label><br />
+      <div id="class"></div>
+      <button type="button" id="addClass" onclick="addClass()">Add Class</button>
+      <button type="button" id="deleteClass" onclick="deleteClass()" style="display: none;">Delete Class</button>
+      <br /><br />
+
+      <label for="funny">Funny Thing?</label>
+      <textarea id="funny" name="funny" placeholder="Enter Response Here" required></textarea><br /><br />
+
+      <label for="else">Anything Else?</label>
+      <textarea id="else" name="else" placeholder="Enter Response Here" required></textarea><br /><br />
+
+      <div id="checkbox">
+        <input type="checkbox" id="acknowledge" name="acknowledge" required />
+        <label for="acknowledge">
+          I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available.
+        </label><br /><br />
+      </div>
+
+      <button type="submit">Submit</button>
+      <button type="button" onclick="resetForm()">Reset Form</button>
+    </form>
+  </main>
+
+  <footer>
+    <div data-include="components/footer.html"></div>
+  </footer>
+
+  <script src="scripts/form.js"></script>
+  <script src="scripts/include.js"></script>
 </body>
 </html>

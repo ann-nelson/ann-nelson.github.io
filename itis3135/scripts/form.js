@@ -3,6 +3,10 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("deleteClass").style.display = "none";
 });
 
+function formatLabel(key) {
+    return key.replace(/[-_]/g, ' ').replace(/\b\w/g, (l) => l.toUpperCase());
+}
+
 function validateForm(event) {
     const requiredInputs = document.querySelectorAll('input[required], textarea[required]');
     let allFilled = true;
@@ -37,16 +41,12 @@ function addClass() {
 
     const titleLabel = document.createElement("label");
     titleLabel.textContent = "Course Title:";
-    titleLabel.htmlFor = `course-title-${Date.now()}`;
-
     const titleInput = document.createElement("textarea");
     titleInput.name = "course-title[]";
     titleInput.required = true;
 
     const descLabel = document.createElement("label");
     descLabel.textContent = "Course Description:";
-    descLabel.htmlFor = `course-descript-${Date.now()}`;
-
     const descInput = document.createElement("textarea");
     descInput.name = "course-descript[]";
 
@@ -54,6 +54,7 @@ function addClass() {
     wrapper.appendChild(titleInput);
     wrapper.appendChild(descLabel);
     wrapper.appendChild(descInput);
+    wrapper.appendChild(document.createElement("br"));
 
     container.appendChild(wrapper);
 
@@ -85,17 +86,11 @@ function submitForm(event) {
     const courseTitles = formData.getAll('course-title[]');
     const courseDescripts = formData.getAll('course-descript[]');
 
-    function formatLabel(key) {
-        return key.replace(/[-_]/g, ' ').replace(/\b\w/g, (l) => l.toUpperCase());
-    }
-    
-    // Loop through all entries except course[] and image
     formData.forEach((value, key) => {
         if (key === 'course-title[]' || key === 'course-descript[]') return;
 
         const li = document.createElement('li');
 
-        // Show image
         if (key === 'image' && value instanceof File) {
             const imgURL = URL.createObjectURL(value);
             li.innerHTML = `<strong>Image:</strong><br><img src="${imgURL}" alt="Uploaded Image" style="max-width: 300px;">`;
@@ -106,7 +101,6 @@ function submitForm(event) {
         ul.appendChild(li);
     });
 
-    // Handle course list display
     if (courseTitles.length > 0) {
         const courseList = document.createElement('li');
         courseList.innerHTML = `<strong>Courses:</strong><ul></ul>`;
@@ -136,10 +130,3 @@ function submitForm(event) {
     };
     main.appendChild(resetLink);
 }
-
-function formatLabel(key) {
-    return key.replace(/[-_]/g, ' ').replace(/\b\w/g, (l) => l.toUpperCase());
-}
-
-
-
