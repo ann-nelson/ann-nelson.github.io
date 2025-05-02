@@ -1,7 +1,7 @@
-document.addEventListener("DOMContentLoaded",()=> {
+document.addEventListener("DOMContentLoaded",() => {
     document.getElementsId("addClass").style.display = "inline";
     document.getElementsId("deleteClass").style.display = "none";
-})
+});
 
 function validateForm(event) {
     const requiredInputs = document.querySelectorAll('input[required], textarea[required]');
@@ -99,7 +99,7 @@ function submitForm(event) {
         if (key === 'image' && value instanceof File){
             const imgURL = URL.createObjectURL(value);
             li.innerHTML = '<strong>Image:</strong><br><img src="${imgURL}" alt="uploaded image" style="max-width:300">';
-        }else{
+        } else {
             li.innerHTML = '<strong>${formatLabel(key)}:</strong> ${value}';
         }
         ul.appendChild(li);
