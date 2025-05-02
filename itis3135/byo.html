@@ -46,7 +46,12 @@
                 <textarea  id="computer" name="computer"  placeholder="Enter Response Here" required></textarea><br><br>
                 
                 <label id="course">Courses currently taking</label><br>
-                <div id="class"></div>
+                <div id="class">
+                <label for="course-title">Course Title</label>
+                <textarea  id="course-title" name="course-title" required></textarea><br>
+                <label for="course-descript">Course Description</label>
+                <textarea  id="course-descript" name="course-descript" required></textarea><br><br>
+                </div>
                 <button type="button" onclick="addClass()">Add Class</button>
                 <button type="button" onclick="deleteClass()" style="display: none;">Delete Class</button>
                 <br><br>
