@@ -34,22 +34,29 @@ function resetForm() {
 }
 
 function addClass() {
+    console.log("Add Class clicked"); // For debugging
+
     const container = document.getElementById("class");
 
     const wrapper = document.createElement("div");
     wrapper.className = "course-entry";
 
+    // Course Title
     const titleLabel = document.createElement("label");
     titleLabel.textContent = "Course Title:";
     const titleInput = document.createElement("textarea");
     titleInput.name = "course-title[]";
+    titleInput.id = `course-title-${Date.now()}`;
     titleInput.required = true;
 
+    // Course Description
     const descLabel = document.createElement("label");
     descLabel.textContent = "Course Description:";
     const descInput = document.createElement("textarea");
     descInput.name = "course-descript[]";
+    descInput.id = `course-descript-${Date.now()}`;
 
+    // Append everything
     wrapper.appendChild(titleLabel);
     wrapper.appendChild(titleInput);
     wrapper.appendChild(descLabel);
