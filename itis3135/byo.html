@@ -25,7 +25,7 @@
                 <textarea  id="mascot" name="mascot" placeholder="Enter Response Here" required></textarea><br><br>
 
                 <label for="image">Image</label>
-                <input type="file" id="image" name="name" required><br><br>
+                <input type="file" id="image" name="image" required><br><br>
 
                 <label for="caption">Image Caption</label>
                 <textarea  id="caption" name="caption"  placeholder="Enter Response Here" required></textarea><br><br>
@@ -46,14 +46,9 @@
                 <textarea  id="computer" name="computer"  placeholder="Enter Response Here" required></textarea><br><br>
                 
                 <label id="course">Courses currently taking</label><br>
-                <div id="class">
-                <label for="course-title">Course Title</label>
-                <textarea  id="course-title" name="course-title" required></textarea><br>
-                <label for="course-descript">Course Description</label>
-                <textarea  id="course-descript" name="course-descript" required></textarea><br><br>
-                </div>
-                <button type="button" onclick="addClass()">Add Class</button>
-                <button type="button" onclick="deleteClass()" style="display: none;">Delete Class</button>
+                <div id="class"></div>
+                <button type="button" id="addClass" onclick="addClass()">Add Class</button>
+                <button type="button" id="deleteClass" onclick="deleteClass()" style="display: none;">Delete Class</button>
                 <br><br>
 
                 <label for="funny">Funny Thing?</label>
