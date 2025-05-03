@@ -122,7 +122,8 @@ button {
 }
 
 .success {
-  color: green;
+  color: #82f8ab;
+  font-weight: bold;
   margin-top: 1rem;
 }
 

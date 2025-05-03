@@ -56,7 +56,7 @@ document.querySelectorAll('input[name="timeline"]').forEach(function(radio) {
       if (this.value === 'yes') {
           timelineDiv.style.display = 'block';
       } else {
-          timelineDiv.style.display = 'none';
+          timelineDiv.style.display = 'block';
       }
   });
 });
