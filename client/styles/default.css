@@ -160,3 +160,13 @@ nav .active {
   font-weight: bold;  
 }
 
+.pause-play{
+  background-color: #82f8ab;
+  border-radius: 5px;
+  padding:10px;
+  position: relative;
+  bottom: 10px;
+  left:44%;
+  font-size: 15px;
+  cursor:pointer;
+}

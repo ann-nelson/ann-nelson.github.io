@@ -150,13 +150,13 @@ button.prev:hover, button.next:hover {
 }
 
 .pause-play{
-  position: absolute;
-  top:50%;
-  left:50%;
-  transform:translate(-50%,-50%);
-  z-index:10;
-  padding:10px 20px;
-  font-size: 16px;
   background-color: #82f8ab;
+  border-radius: 5px;
+  padding:10px;
+  position: relative;
+  bottom: 10px;
+  left:44%;
+  font-size: 15px;
+  cursor:pointer;
 }
 
