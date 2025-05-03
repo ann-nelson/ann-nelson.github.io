@@ -18,54 +18,56 @@
       Please complete the form below so we can create your personalized page.
     </h3>
 
-    <form method="POST" enctype="multipart/form-data" onsubmit="submitForm(event)">
+    <form method="POST" enctype="multipart/form-data">
       <label for="name">Name</label>
-      <input type="text" id="name" name="name" placeholder="Enter Response Here" required /><br /><br />
-
+      <input type="text" id="name" name="name" placeholder="Enter Response Here" required />
+      <br>
       <label for="mascot">Mascot</label>
-      <textarea id="mascot" name="mascot" placeholder="Enter Response Here" required></textarea><br /><br />
-
+      <textarea id="mascot" name="mascot" placeholder="Enter Response Here" required></textarea>
+  <br>
       <label for="image">Image</label>
-      <input type="file" id="image" name="image" required /><br /><br />
-
+      <input type="file" id="image" name="image" required onchange="loadImage()" />
+      <div id="loadImage"></div>
+      <br>
       <label for="caption">Image Caption</label>
-      <textarea id="caption" name="caption" placeholder="Enter Response Here" required></textarea><br /><br />
-
+      <textarea id="caption" name="caption" placeholder="Enter Response Here" required></textarea>
+  <br>
       <label for="personal">Personal Background</label>
-      <textarea id="personal" name="personal" placeholder="Enter Response Here" required></textarea><br /><br />
-
+      <textarea id="personal" name="personal" placeholder="Enter Response Here" required></textarea>
+  <br>
       <label for="pro">Professional Background</label>
-      <textarea id="pro" name="pro" placeholder="Enter Response Here" required></textarea><br /><br />
-
+      <textarea id="pro" name="pro" placeholder="Enter Response Here" required></textarea>
+  <br>
       <label for="academic">Academic Background</label>
-      <textarea id="academic" name="academic" placeholder="Enter Response Here" required></textarea><br /><br />
-
+      <textarea id="academic" name="academic" placeholder="Enter Response Here" required></textarea>
+  <br>
       <label for="web">Background in Web Development</label>
-      <textarea id="web" name="web" placeholder="Enter Response Here" required></textarea><br /><br />
-
+      <textarea id="web" name="web" placeholder="Enter Response Here" required></textarea>
+  <br>
       <label for="computer">Primary Computer Platform</label>
-      <textarea id="computer" name="computer" placeholder="Enter Response Here" required></textarea><br /><br />
-
-      <label>Courses Currently Taking</label><br />
+      <textarea id="computer" name="computer" placeholder="Enter Response Here" required></textarea>
+  <br>
+      <label>Courses Currently Taking</label>
       <div id="class"></div>
-      <button type="button" id="addClass" onclick="addClass()">Add Class</button>
-      <button type="button" id="deleteClass" onclick="deleteClass()" style="display: none;">Delete Class</button>
-
+      <button type="button" id="addClass">Add Class</button>
+      <button type="button" id="deleteClass" style="display: none;">Delete Class</button>
+  <br>
       <label for="funny">Funny Thing?</label>
-      <textarea id="funny" name="funny" placeholder="Enter Response Here" required></textarea><br /><br />
-
+      <textarea id="funny" name="funny" placeholder="Enter Response Here" required></textarea>
+  <br>
       <label for="else">Anything Else?</label>
-      <textarea id="else" name="else" placeholder="Enter Response Here" required></textarea><br /><br />
-
+      <textarea id="else" name="else" placeholder="Enter Response Here" required></textarea>
+  <br>
       <div id="checkbox">
         <input type="checkbox" id="acknowledge" name="acknowledge" required />
         <label for="acknowledge">
           I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available.
-        </label><br /><br />
+        </label>
       </div>
-
+  
+      <br/>
       <button type="submit">Submit</button>
-      <button type="button" onclick="resetForm()">Reset Form</button>
+      <button type="button" id="resetForm">Reset Form</button>
     </form>
   </main>
 

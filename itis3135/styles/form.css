@@ -191,7 +191,7 @@ p {
 form{
     text-align: left;
     display:grid;
-    padding: 40px;
+    padding: 45px;
     font-weight: bold;
     background-color: rgb(57, 116, 114);
     color:aliceblue;
@@ -209,3 +209,14 @@ form input{
 .checkbox label {
     margin-left: 10px;
 }
+
+#submission-output {
+    text-align: center;
+  }
+  
+  #submission-output li {
+    text-align: left;       
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+  }
