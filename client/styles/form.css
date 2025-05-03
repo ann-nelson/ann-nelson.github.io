@@ -52,7 +52,7 @@ a:hover {
   font-weight: bold;
 }
 
-nav .active {
+nav a.active {
   color: #ff6600;
   font-weight: bold;
 }

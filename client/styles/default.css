@@ -130,7 +130,7 @@ section{
   background-color: #33658A;
 }
 
-nav .active {
+nav a.active {
   color: #ff6600; 
   font-weight: bold;  
 }
