@@ -8,7 +8,7 @@ body {
 }
 
 h1, #slogan {
-  background-color: #33658A;
+  background-color: #152939;
   padding: 20px;
   text-align: center;
   color: #A5E6BA;
@@ -21,10 +21,11 @@ h1, #slogan {
 }
 
 nav {
-  background-color: #5171A5;
+  background-color: #33658A;
   width: 95%;
   display: block;
   margin: 0 auto;
+  border-radius: 15px;
 }
 
 nav ul {
@@ -69,7 +70,7 @@ main {
 }
 
 .footer {
-  background-color: #33658A;
+  background-color: #152939;
   color: #A5E6BA;
   text-align: center;
   width: 100%;
@@ -133,5 +134,5 @@ button {
 }
 
 .valid {
-  background-color: #33658A;
+  background-color: #152939;
 }

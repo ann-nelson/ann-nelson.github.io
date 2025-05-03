@@ -7,7 +7,7 @@ body{
   color:#D5C5C8;
 }
 h1, #slogan{
-  background-color: #33658A;
+  background-color: #1b2537;
   padding: 20px;
   text-align: center;
   color:#A5E6BA;
@@ -20,7 +20,7 @@ h1, #slogan{
 }
 
 nav{
-  background-color: #5171A5;
+  background-color: #33658A;
   width: 95%;
   display: block;
   margin: 0 auto;
@@ -99,7 +99,7 @@ figcaption{
 
   
 .footer{
-  background-color: #33658A;
+  background-color: #1b2537;
   color:#A5E6BA;
   text-align: center;
   width: 100%;
@@ -127,12 +127,7 @@ section{
 }
 
 .valid{
-  background-color: #33658A;
-}
-
-nav .active {
-  color: #ff6600; 
-  font-weight: bold;  
+  background-color: #1b2537;
 }
 
 .pause-play{
@@ -153,7 +148,6 @@ figure {
   background-color: #234884;
   border-radius: 15px;
   padding:5px;
-  border:#ff6600 solid 1.5px;
   opacity: 0;
   pointer-events: none;
   transition:opacity 0.3 ease;
