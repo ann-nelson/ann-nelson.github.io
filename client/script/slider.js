@@ -46,5 +46,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
       showSlide(currentIndex);
       startAutoPlay();
+
     });
 });
