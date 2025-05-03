@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     links.forEach((link) => {
-        const linkPath = new URL(link.href).pathname'
+        const linkPath = new URL(link.href).pathname;
         console.log("Link page:", linkPage);
 
         if (linkPath === currentPath) {

@@ -149,3 +149,14 @@ button.prev:hover, button.next:hover {
   background-color: #33658A;
 }
 
+.pause-play{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  z-index:10;
+  padding:10px 20px;
+  font-size: 16px;
+  background-color: #82f8ab;
+}
+
