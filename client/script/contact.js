@@ -45,7 +45,7 @@ document.getElementById('email').addEventListener('input', (function() {
 document.getElementById('message').addEventListener('input', (function() {
   validateField(this, 'messageError');
 }));
-//dynamicallt create error elements for each field
+//dynamically create error elements for each field
 const formFields = ['name', 'phone', 'email', 'message'];
 formFields.forEach(function(field) {
   const input = document.getElementById(field);
