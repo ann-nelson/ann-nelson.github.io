@@ -1,49 +1,50 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const sliderContainers = document.querySelectorAll(".slider-container");
-
+  //select all slider container
+    const sliderContainers = document.querySelectorAll(".slider-container");
+//loop each slider container
   sliderContainers.forEach((container) => {
       const slides = container.querySelectorAll(".slide");
-      const prevBtn = container.querySelector(".prev");
-      const nextBtn = container.querySelector(".next");
+      
 
-      let currentIndex = 0;
-      let intervalId;
-      let isPlaying = true;
+      let currentIndex = 0;//track index of currently visible slide
+      let intervalId;//store autoplay interval
+      let isPlaying = true;//track autoplay currently active
 
+      //create play/pause btn and add to slide container
       const pauseBtn = document.createElement("button");
-      pauseBtn.textContent = "Pause";
-      pauseBtn.classList.add("pause-play");
+      pauseBtn.textContent = "Pause";//
+      pauseBtn.classList.add("pause-play"); 
       container.appendChild(pauseBtn);
-
+//display current slide and hide others
       function showSlide(index) {
-          slides.forEach((slide) => slide.style.display = "none"); 
-          slides[index].style.display = "block"; 
+          slides.forEach((slide) => slide.style.display = "none"); //hide slide
+          slides[index].style.display = "block"; //show slide
         }
-
+//start automatice slide change every 5 sec
       function startAutoPlay() {
         intervalId = setInterval(() => { 
             currentIndex = (currentIndex + 1) % slides.length;
             showSlide(currentIndex);
         }, 5000);
     }
-
+//stop slideshow
     function stopAutoPlay(){
         clearInterval(intervalId);
     }
-
+//toggle play/pause when btn clicked
     pauseBtn.addEventListener("click", () => {
         if (isPlaying) {
-            stopAutoPlay();
+            stopAutoPlay();//pause slide
             pauseBtn.textContent = "Play";
 
         } else {
-            startAutoPlay();
+            startAutoPlay();//resume slide
             pauseBtn.textContent = "Pause";
 
         }
         isPlaying = !isPlaying;
     });
-
+//show slide and start autoplay 
       showSlide(currentIndex);
       startAutoPlay();
 
